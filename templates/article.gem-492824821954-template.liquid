@@ -1,0 +1,152 @@
+{% comment %}
+	GEMPAGE BUILDER (https://apps.shopify.com/gempage)
+
+	You SHOULD NOT modify source code in this page because
+	It is automatically generated from GEMPAGE BUILDER
+	Try to edit page with the live editor.
+{% endcomment %}
+<!--GEM_HEADER-->
+<link data-instant-track rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" class="gf-style" />
+<link data-instant-track rel="stylesheet" type="text/css" href="https://d1um8515vdn9kb.cloudfront.net/files/vendor.css?refresh=1" class="gf-style" />
+<link data-instant-track rel="stylesheet" type="text/css" href="{{ 'gem-article-492824821954.css' | asset_url }}" class="gf_page_style">
+<!--GEM_HEADER_END-->
+<!-- /templates/article.liquid --><!-- /templates/article.liquid -->
+{% assign number_of_comments = article.comments_count %}{% if comment and comment.created_at %}
+  {% assign number_of_comments = article.comments_count | plus: 1 %}
+{% endif %}<div class="grid padding-15-xs">
+  <article class="grid__item large--five-sixths push--large--one-twelfth article" itemscope itemtype="http://schema.org/Article">    <div class="grid">
+      <div class="grid__item large--four-fifths push--large--one-tenth">
+        <div class="article-img-container">
+          {% assign img_url = article.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
+          <img class="article__featured-image lazyload"
+               src="{{ article.image | img_url: '300x300' }}"
+               data-src="{{ img_url }}"
+               data-widths="[310, 360, 480, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+               data-aspectratio="{{ article.image.aspect_ratio }}"
+               data-sizes="auto"
+               alt="{{ article.title | escape }}">
+        </div>
+    <header class="section-header">
+      <h1>{{ article.title }}</h1>
+      <!--<hr class="hr--small">-->
+       <div class="article_tag" style="display: flex;">
+      <p>
+        <span class="date no-margin"><time datetime="{{ article.published_at | date: '%Y-%m-%d' }}">{{ article.published_at | date: format: 'month_day_year' }}</time></span>
+      &#8231;
+         </p>
+      <ul class="tags tags--article inline-list">
+          {% include 'tags-article' %}
+        </ul>
+      </div>
+    </header>
+      </div>
+    </div>
+    <hr class="full light-grey">
+    <div class="grid">
+      <div class="trial">
+        
+        <div class="rte--indented-images" itemprop="articleBody">
+          <!--Gem_Page_Main_Editor--><div class="clearfix"></div><div class="gryffeditor"><div data-label="Text Block" data-key="text-block" id="e-1606178978761" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606178978761"><div class="elm text-edit gf-elm-left gf-elm-left-lg gf-elm-left-md gf-elm-left-sm gf-elm-left-xs" data-gemlang="en" data-exc=""><p>We chatted with Dr. Shaakira Haywood Stewart about all things mental health, including expert mental health tips for today’s climate. Read more on her expertise in mental health and how you can apply best practices. Be sure to tune in on our Instagram where Dr. Haywood Stewart will be answering questions like: What is mental health? Why is mental health important? What are best mental health tips and practices?</p><p><br></p><p><br></p></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606185443476" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606185443476"><div class="elm text-edit gf-elm-left gf-elm-center-md gf-elm-center-sm gf-elm-center-xs gf-elm-left-lg" data-gemlang="en" data-exc=""><p><b><br></b></p><p><b style="color: inherit; font-family: inherit; font-size: inherit; text-align: inherit;">What is your title or position? What do you specialize in?&nbsp;</b><br></p><p><b style="color: inherit; font-family: inherit; font-size: inherit; text-align: inherit;"><br></b></p></div></div><!--gfsplit--><div class="element-wrap" data-label="Text Block" id="e-1606178974728" data-icon="gpicon-textblock" data-ver="1" data-id="1606178974728"><div class="elm text-edit"></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606179051321" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606179051321"><div class="elm text-edit gf-elm-left gf-elm-left-md gf-elm-left-sm gf-elm-left-xs gf-elm-left-lg" data-gemlang="en" data-exc=""><p><span style="color: inherit; font-family: inherit; font-size: inherit; text-align: inherit;">I am a psychologist in private practice in New York City. I specialize in working with adults around various concerns including (but not limited to) depression, anxiety, family issues, relational issues, grief, and trauma. Within these dynamics, I have a particular focus on working with college students, student-athletes, people of color, LGBTQ, and people from a variety of socioeconomic and religious backgrounds. I also am a professor at the City College of New York teaching both undergraduate and graduate classes on multicultural issues.&nbsp;</span><br></p><p><br></p></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606185704475" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606185704475"><div class="elm text-edit gf-elm-left gf-elm-center-md gf-elm-center-sm gf-elm-center-xs gf-elm-left-lg" data-gemlang="en" data-exc=""><p><b><br></b></p><p><b>Where are you based?</b></p><p><br></p></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606185711474" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606185711474"><div class="elm text-edit gf-elm-left gf-elm-left-md gf-elm-left-sm gf-elm-left-xs gf-elm-left-lg" data-gemlang="en" data-exc=""><p>My private practice office is in downtown Manhattan near Union Square.&nbsp;</p><p><br></p><p><br></p></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606185762176" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606185762176"><div class="elm text-edit gf-elm-left gf-elm-center-md gf-elm-center-sm gf-elm-center-xs gf-elm-left-lg" data-gemlang="en" data-exc=""><p><b style="color: inherit; font-family: inherit; font-size: inherit; text-align: inherit;">What was your journey with going into the mental health field? Did you always know you wanted to do this? What were you doing before?&nbsp;</b><br></p><p><br></p></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606185768311" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606185768311"><div class="elm text-edit gf-elm-left gf-elm-left-md gf-elm-left-sm gf-elm-left-xs gf-elm-left-lg" data-gemlang="en" data-exc=""><p><span style="color: inherit; font-family: inherit; font-size: inherit; text-align: inherit;">My journey was pretty linear. I always knew I wanted to be a doctor or a teacher and realized pretty earlier on that I was not a fan of blood...or biology quite honestly. I had a few classes in high school that introduced me to psychology and human service and I fell in love with the idea of being a psychologist. I left high school knowing that I wanted to be a psychologist and continued on that path with school. I had a few basketball coaches and family members that really encouraged me to go all the way and get my doctorate in psychology. What continued to motivate me was the fact that I never knew any psychologists, yet alone any psychologist of color and wanted to be an example for people.&nbsp;</span><br></p><p><br></p></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606185940926" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606185940926"><div class="elm text-edit gf-elm-left gf-elm-center-md gf-elm-center-sm gf-elm-center-xs gf-elm-left-lg" data-gemlang="en" data-exc=""><p><b style="color: inherit; font-family: inherit; font-size: inherit; text-align: inherit;">What was your journey with going into the mental health field? Did you always know you wanted to do this? What were you doing before?&nbsp;</b><br></p><p><br></p></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606185853298" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606185853298"><div class="elm text-edit gf-elm-left gf-elm-left-md gf-elm-left-sm gf-elm-left-xs gf-elm-left-lg" data-gemlang="en" data-exc=""><p><span style="color: inherit; font-family: inherit; font-size: inherit; text-align: inherit;">Such a great question. I would say that mental health means maintaining mental fitness. I think of our mind in the same way as our body and that in order to have good mental health, we need to continually work at keeping it healthy. We can do this through therapy, gratitude, self-care practices, and taking care of our overall wellness.&nbsp;</span><br></p></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606179831585" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606179831585"><div class="elm text-edit gf-elm-left gf-elm-center-md gf-elm-center-sm gf-elm-center-xs gf-elm-right-lg" data-gemlang="en" data-exc=""><p><b><br></b></p><p><b>"Allowing our minds to focus on the present brings in peace"</b></p></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606185981123" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606185981123"><div class="elm text-edit gf-elm-left gf-elm-center-md gf-elm-center-sm gf-elm-center-xs gf-elm-left-lg" data-gemlang="en" data-exc=""><p><b style="color: inherit; font-family: inherit; font-size: inherit; text-align: inherit;"><br></b></p><p><b style="color: inherit; font-family: inherit; font-size: inherit; text-align: inherit;"><br></b></p><p><b style="color: inherit; font-family: inherit; font-size: inherit; text-align: inherit;">What was your journey with going into the mental health field? Did you always know you wanted to do this? What were you doing before?&nbsp;</b><br></p><p><br></p></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606179812183" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606179812183"><div class="elm text-edit gf-elm-left gf-elm-left-lg gf-elm-left-md gf-elm-left-sm gf-elm-left-xs" data-gemlang="en" data-exc=""><p><span style="color: inherit; font-family: inherit; font-size: inherit; text-align: inherit;">I see my work having the biggest impact in the university setting. Every student I am directly impacting their communities by talking to them about racial injustices, power and privilege. I am an example that they too can earn their degree and impact their family and community around them in positive ways.&nbsp;</span><br></p><p><br></p></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606186020155" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606186020155"><div class="elm text-edit gf-elm-left gf-elm-center-md gf-elm-center-sm gf-elm-center-xs gf-elm-left-lg" data-gemlang="en" data-exc=""><p><b style="color: inherit; font-family: inherit; font-size: inherit; text-align: inherit;"><br></b></p><p><b>What are some mental health tips you have?</b></p><p><br></p></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606186003307" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606186003307"><div class="elm text-edit gf-elm-left gf-elm-left-lg gf-elm-left-md gf-elm-left-sm gf-elm-left-xs" data-gemlang="en" data-exc=""><p><span style="color: inherit; font-family: inherit; font-size: inherit; text-align: inherit;">Attitude of gratitude! That is my biggest tip right now. Oftentimes we can be stuck in doom and gloom, especially with so much going on around us. Every morning or night, write down three things you are grateful for. Gratitude helps bring us into the present, and alleviates our thoughts from sinking into the past and the present. Focusing on the past generally leads us to have depressive thoughts, while focusing on the future brings anxiety. Allowing our minds to focus on the present brings in peace. Another tip is mindfulness. A lot of people struggle with meditation and mindfulness but an easy way to incorporate this practice into your everyday life is when you shower. It’s so simple. Take the time to stay present during your shower. Notice the water on your skin, the smell of the water, the texture of your body wash. Noticing all the little things allows you to stay present and brings in peace.&nbsp;</span><br></p><p><br></p></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606186056250" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606186056250"><div class="elm text-edit gf-elm-left gf-elm-center-md gf-elm-center-sm gf-elm-center-xs gf-elm-left-lg" data-gemlang="en" data-exc=""><p><b style="color: inherit; font-family: inherit; font-size: inherit; text-align: inherit;"><br></b></p><p><b>What is your self-care routine?</b></p><p><br></p></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606186047329" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606186047329"><div class="elm text-edit gf-elm-left gf-elm-left-lg gf-elm-left-md gf-elm-left-sm gf-elm-left-xs" data-gemlang="en" data-exc=""><p><span style="color: inherit; font-family: inherit; font-size: inherit; text-align: inherit;">My self-care routine is simple, but it’s so important. I wake up every morning in prayer and reading a scripture from the bible. I take my vitamins and drink my Wholy Dose Matcha iced over oat milk. I get outside everyday, even if it's just to catch a sunset. Exercising and walking has been super important for me lately in keeping my mood elevated and vitamin D levels high.&nbsp;</span><br></p><p><br></p><p><br></p><p><br></p></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606179104250" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606179104250"><div class="elm text-edit gf-elm-left gf-elm-center-lg gf-elm-center-md gf-elm-center-sm gf-elm-center-xs" data-gemlang="en" data-exc=""><p><b>More Dr. Shaakira Haywood Stewart</b></p></div></div><!--gfsplit--><div data-label="Row" class="gf_row" id="r-1606179323774" data-icon="gpicon-row" data-id="1606179323774"><div class="gf_column gf_col-lg-6 gf_col-md-6 gf_col-sm-6 gf_col-xs-12" id="c-1606179323701" data-id="1606179323701"><div data-label="Image" data-key="image" id="e-1606179326503" class="element-wrap" data-icon="gpicon-image" data-ver="1.0" data-id="1606179326503" data-resolution="3000x3000"><div class="elm gf-elm-center gf_elm-left-xs gf-elm-center-md gf-elm-center-sm gf-elm-center-xs gf-elm-center-lg" data-exc=""><img src="https://ucarecdn.com/d2bbdc17-0f0f-4414-ab2a-8a4d4b12c659/-/format/auto/-/preview/3000x3000/-/quality/lighter/" alt="" class="gf_image rte__no-indent" data-gemlang="en" data-width="auto" data-height="auto" title="" natural-width="1200" natural-height="1200"></div></div></div><div class="gf_column gf_col-lg-6 gf_col-md-6 gf_col-sm-6 gf_col-xs-12" id="c-1606179323663" data-id="1606179323663"><div data-label="Text Block" data-key="text-block" id="e-1606179391479" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606179391479"><div class="elm text-edit gf-elm-left gf-elm-left-lg gf-elm-left-md gf-elm-left-sm gf-elm-left-xs" data-gemlang="en" data-exc=""><p><b>What is your favorite food/meal?</b></p><p>My favorite meal is tacos! Gosh, I love tacos. I eat them every single week in various forms. Shrimp tacos, chicken tacos, Beyond Meat tacos, all the tacos.&nbsp;</p><p><br></p><p><br></p><p><b>What is your ideal, dream day in New York City?&nbsp;</b></p><p>Ah, having a glass of wine and a huge plate of pasta outside at a tiny Italian restaurant in the city during sunset. Missing this so much right now!&nbsp;</p><p><br></p><p><b>Where you can our audience find you?</b></p><p>You can find me at @drshaakira and @shaakira.stewart on Instagram.&nbsp;</p><p><br></p><p>If you are interested in therapy, I am accepting clients in the NY area – you can go to my website, www.drshaakira.com, to learn more about me and hit the contact button!&nbsp;<span style="color: inherit; font-family: inherit; font-size: inherit; text-align: inherit;">For folks outside of the New York area looking to start therapy, you can visit psychologytoday.com to find a therapist in your area.&nbsp;</span></p></div></div></div></div><!--gfsplit--></div><div id="divContentBk"></div><!--End_Gem_Page_Main_Editor-->
+        </div>                      {% if blog.comments_enabled? %}          {% if number_of_comments > 0 %}
+            <hr class="hr--large">
+            <h2 class="h3 text-center">{{ 'blogs.comments.with_count' | t: count: number_of_comments }}</h2>
+            <hr class="hr--small hr--clear">
+          {% endif %}          {% paginate article.comments by 20 %}
+            
+            <div id="comments">              {% if comment and comment.created_at %}
+                <p class="note form-success">
+                  {% if blog.moderated? %}
+                    {{ 'blogs.comments.success_moderated' | t }}
+                  {% else %}
+                    {{ 'blogs.comments.success' | t }}
+                  {% endif %}
+                </p>
+              {% endif %}              {% if number_of_comments > 0 %}
+                <ul class="no-bullets">
+                  
+                  {% if comment and comment.created_at %}
+                    <li id="{{ comment.id }}" class="comment first{% if article.comments_count == 0 %} last{% endif %}">
+                      {% include 'comment' %}
+                    </li>
+                  {% endif %}                  
+                  {% for comment in article.comments %}
+                    <li id="{{ comment.id }}" class="comment{% unless number_of_comments > article.comments_count %}{% if forloop.first %} first{% endif %}{% endunless %}{% if forloop.last %} last {% endif %}">
+                      {% include 'comment' %}
+                    </li>                    {% unless forloop.last %}
+                      <li><hr class="hr--clear"></li>
+                    {% endunless %}
+                  {% endfor %}
+                </ul>                {% if paginate.pages > 1 %}
+                  {% include 'pagination' %}
+                {% endif %}              {% endif %}              <hr class="hr--large">              <h2 class="h3 text-center">{{ 'blogs.comments.title' | t }}</h2>
+              <hr class="hr--small hr--clear">              <div class="form-vertical">
+                {% form 'new_comment', article %}                  {{ form.errors | default_errors }}                  <div class="grid grid--small">
+                    <div class="grid__item large--one-half">
+                      <label for="CommentAuthor" class="hidden-label">{{ 'blogs.comments.name' | t }}</label>
+                      <input class="input-full{% if form.errors contains 'author' %} error{% endif %}" type="text" name="comment[author]" placeholder="{{ 'blogs.comments.name' | t }}" id="CommentAuthor" value="{{ form.author }}" autocapitalize="words">
+                    </div>
+                    <div class="grid__item large--one-half">
+                      <label for="CommentEmail" class="hidden-label">{{ 'blogs.comments.email' | t }}</label>
+                      <input class="input-full{% if form.errors contains 'email' %} error{% endif %}" type="email" name="comment[email]" placeholder="{{ 'blogs.comments.email' | t }}" id="CommentEmail" value="{{ form.email }}" autocorrect="off" autocapitalize="off">
+                    </div>
+                  </div>                  <label for="CommentBody" class="hidden-label">{{ 'blogs.comments.message' | t }}</label>
+                  <textarea class="input-full{% if form.errors contains 'body' %} error{% endif %}" name="comment[body]" id="CommentBody" placeholder="{{ 'blogs.comments.message' | t }}">{{ form.body }}</textarea>                  <div class="text-center">
+                    {% if blog.moderated? %}
+                      <p>{{ 'blogs.comments.moderated' | t }}</p>
+                    {% endif %}                    <input type="submit" class="btn" value="{{ 'blogs.comments.post' | t }}">
+                  </div>                {% endform %}
+              </div>            </div>
+          {% endpaginate %}
+        {% endif %}      </div>
+    </div>  </article>
+</div>{% if section.settings.upsellart != blank %}
+<br/><br/>
+<div class="wrapper">
+  <h2 style="text-align: center">{{ section.settings.upselltextart }}</h2>
+  <div class="new-collection-wrap" style="padding-bottom:15px;">
+    <div class="grid-uniform">
+      {% assign grid_item_width = 'small--one-half medium--one-half large--one-quarter' %}
+      {% for product in collections[section.settings.upsellart].products limit: 4 %}
+        {% include 'product-grid-item' %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endif %}<hr class="hr--medium hr--clear">
+<div class="grid__item" style="display:flex">
+ <div class="leftalign">
+  <a href="{{ blog.url }}" class="custblog">&larr; {{ 'blogs.article.back_to_blog' | t: title: blog.title }}</a>
+  </div>
+  <div class="centeralignshare custblog">
+    Share This Article
+  </div></div>
+          {% include 'social-sharing', share_title: article.title, share_permalink: article.url, share_image: article.image %}
+        <style>
+  .centeralignshare
+  {
+   text-align:center;flex:0 1 33% ;
+  }
+  .leftalign
+  {
+  text-align:left; flex:0 1 33%;
+  }
+  .custblog
+  {
+    font-weight: 500!important;
+    font-size: 15px!important;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #1D1D1D;
+  }
+</style>{% section 'featured-products' %}
+<!--GEM_FOOTER-->
+{% capture GEM_FOOTER_SCRIPT %}
+<script data-instant-track type="text/javascript">
+	var pageLibs = [		'{{ 'gem-article-492824821954.js' | asset_url }}',	];
+</script>
+<script data-instant-track type="text/javascript">
+	var GEMVENDOR = GEMVENDOR || (function(){		var _js = {};		return {			init: function(Args) {				_js = Args;			},			getLibs: function() {				return _js;			}		};	}());	GEMVENDOR.init(pageLibs);</script>
+<script data-instant-track type="text/javascript" src="https://d1um8515vdn9kb.cloudfront.net/files/gempagev2.js?v=1.0" class="gf-script" defer></script>
+{% endcapture %}
+<!--GEM_FOOTER_END-->

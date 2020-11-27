@@ -85,23 +85,15 @@
             </ul>  
 
       {% unless shop.enabled_payment_types == empty %}
-      {% assign payment_icons_available = 'amazon_payments,american_express,apple_pay,bitcoin,cirrus,dankort,diners_club,discover,dogecoin,dwolla,forbrugsforeningen,google_pay,interac,jcb,klarna,litecoin,maestro,master,paypal,shopify_pay,visa' | split: ',' %}
-      <ul class="inline-list payment-icons" style="padding: 5px 0; margin: 0;">
-        <li>
-          <img width="25" src="https://cdn.shopify.com/s/files/1/0492/8489/files/Screen_Shot_2019-06-25_at_3.38.49_PM.png?19363">
-        </li>
-        {% for type in shop.enabled_payment_types %}
-
-        {% if payment_icons_available contains type %}
-        <li style="padding: 0; margin: 0;">
-          <span class="icon-fallback-text">
-            <span  class="icon icon-{{ type }}" aria-hidden="true" style="font-size: 10px; color: black; opacity: .5;"></span>
-            <span class="fallback-text"  style="font-size: 10px; color: black; opacity: .5;">{{ type | replace: '_',' ' }}</span>
-          </span>
-        </li>
-        {% endif %}
-        {% endfor %}
-      </ul>
+  
+<!--   <ul class="no-bullets social-icons">
+    {% assign enabled_payment_types = 'visa,master,american_express,discover,shopify_pay,apple_pay,google_pay,paypal' | remove: ' ' | split: ',' %}
+    {% for type in enabled_payment_types %}  
+    <li style="margin-right:0;">
+      {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
+    </li>
+    {%- endfor -%}
+  </ul> -->
       {% endunless %}
 
     </div>
@@ -138,7 +130,7 @@
       <div style="float:left;">
       <span
        style=" position: relative; "
-      >&copy; {{ 'now' | date: '%Y' }} Wholy Dose</span>
+      >{{ section.settings.footer_copyright }}</span>
       </div>
     </div>
 
@@ -193,6 +185,11 @@
       "id": "footer_title2",
       "label": "Title",
       "default": "Information"
+    },{
+      "type": "richtext",
+      "id": "footer_copyright",
+      "label": "CopyrightText",
+"default": "<p>Copyright</p>"
     },
     {
       "type": "link_list",

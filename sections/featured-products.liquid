@@ -48,11 +48,71 @@
 
         {% else %}
 
-          {% assign grid_item_width = 'small--one-half medium--one-half large--one-quarter' %}
-          {% for product in collections[section.settings.home_featured_products].products %}
+       {% if collections[section.settings.home_featured_products].products.size == 3%}
+        {% assign grid_item_width = 'small--one-half medium--one-quarter large--one-third' %}
+
+       {% else %}
+   {% assign grid_item_width = 'small--one-half medium--one-half large--one-quarter' %}
+          {% endif %}
+     <div class="new-banner-desktop">
+      	{% for product in collections[section.settings.home_featured_products].products %}
             {% include 'product-grid-item' %}
           {% endfor %}
+      </div>
+      <div class= "new-banner-mobile" >
+        <a class="prev" onclick="plusSlides(-1)"></a>
+        	{% for product in collections[section.settings.home_featured_products].products %}
+            {% include 'product-grid-carousel' %}
+          {% endfor %}
+		<a class="next1" onclick="plusSlides(1)"></a>
+        
+      </div>
 
+<style>
+  .prev, .next1 {
+  position: absolute;
+    margin-top:50%;
+  border-radius: 0 3px 3px 0;
+}
+    .prev {
+      left:10px;
+      width:20px;
+      height:20px;
+          background: url(//cdn.shopify.com/s/files/1/0273/3670/4087/t/12/assets/angle-left.png?v=1539219703052708837) no-repeat center center;
+    background-size: 11px;
+}
+     .next1 {
+      right:10px;
+           width:20px;
+      height:20px;
+       background: url(//cdn.shopify.com/s/files/1/0273/3670/4087/t/12/assets/angle-right.png?v=5790983483087170505) no-repeat center center;
+    background-size: 11px;
+}
+      </style>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+ 
+  slides[slideIndex-1].style.display = "block";  
+}
+</script>
         {% endif %}
 
       {% endif %}

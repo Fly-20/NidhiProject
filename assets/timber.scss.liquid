@@ -131,7 +131,7 @@
 
 @function color-control($color) {
   @if (lightness( $color ) > 40) {
-    @return #1c1d1d;
+    @return #1d1d1d;
   }
   @else {
     @return #fff;
@@ -3264,3 +3264,17 @@ $socialIconFontStack: 'icons';
   }
 }
 
+#shopify-section-product-template {.rte h4{
+  margin-bottom:10px;
+}
+}
+#shopify-section-product-template {.rte  p {
+    font-weight:500;
+  }
+}
+
+#shopify-section-product-template .i-block { .rte {
+	width: 120%;
+    margin-left: -10%;
+}
+}

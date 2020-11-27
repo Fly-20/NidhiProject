@@ -1,0 +1,152 @@
+{% comment %}
+	GEMPAGE BUILDER (https://apps.shopify.com/gempage)
+
+	You SHOULD NOT modify source code in this page because
+	It is automatically generated from GEMPAGE BUILDER
+	Try to edit page with the live editor.
+{% endcomment %}
+<!--GEM_HEADER-->
+<link data-instant-track rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" class="gf-style" />
+<link data-instant-track rel="stylesheet" type="text/css" href="https://d1um8515vdn9kb.cloudfront.net/files/vendor.css?refresh=1" class="gf-style" />
+<link data-instant-track rel="stylesheet" type="text/css" href="{{ 'gem-article-492831178946.css' | asset_url }}" class="gf_page_style">
+<!--GEM_HEADER_END-->
+<!-- /templates/article.liquid --><!-- /templates/article.liquid -->
+{% assign number_of_comments = article.comments_count %}{% if comment and comment.created_at %}
+  {% assign number_of_comments = article.comments_count | plus: 1 %}
+{% endif %}<div class="grid padding-15-xs">
+  <article class="grid__item large--five-sixths push--large--one-twelfth article" itemscope itemtype="http://schema.org/Article">    <div class="grid">
+      <div class="grid__item large--four-fifths push--large--one-tenth">
+        <div class="article-img-container">
+          {% assign img_url = article.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
+          <img class="article__featured-image lazyload"
+               src="{{ article.image | img_url: '300x300' }}"
+               data-src="{{ img_url }}"
+               data-widths="[310, 360, 480, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+               data-aspectratio="{{ article.image.aspect_ratio }}"
+               data-sizes="auto"
+               alt="{{ article.title | escape }}">
+        </div>
+    <header class="section-header">
+      <h1>{{ article.title }}</h1>
+      <!--<hr class="hr--small">-->
+       <div class="article_tag" style="display: flex;">
+      <p>
+        <span class="date no-margin"><time datetime="{{ article.published_at | date: '%Y-%m-%d' }}">{{ article.published_at | date: format: 'month_day_year' }}</time></span>
+      &#8231;
+         </p>
+      <ul class="tags tags--article inline-list">
+          {% include 'tags-article' %}
+        </ul>
+      </div>
+    </header>
+      </div>
+    </div>
+    <hr class="full light-grey">
+    <div class="grid">
+      <div class="trial">
+        
+        <div class="rte--indented-images" itemprop="articleBody">
+          <!--Gem_Page_Main_Editor--><div class="clearfix"></div><div class="gryffeditor"><div class="element-wrap" data-label="Text Block" id="e-1606230103510" data-icon="gpicon-textblock" data-ver="1" data-id="1606230103510"><div class="elm text-edit"></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606230130321" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606230130321"><div class="elm text-edit gf-elm-left gf-elm-left-lg gf-elm-left-md gf-elm-left-sm gf-elm-left-xs" data-gemlang="en" data-exc=""><p>Staying healthy isn’t only about the food you eat, but is also about the amount of exercise, sleep, and fresh air you get. What does a balanced lifestyle look like? How do you have a balanced diet? How do you get motivated to stay healthy and fit? What are some exercise tips to incorporate into your daily routine?&nbsp;</p><p><br></p><p>We spent time with Madison Maley (who would’ve been in NYC but is back in New Jersey due to COVID-19) who balances life as a full-time student while running her Instagram page, @HealthByMads: an online community where Madison shares her experience and expertise that make up her health and wellness routine, and where individuals share their own health and wellness stories.</p><p><br></p><p>A lifelong athlete, Madison didn’t have to focus on her eating and exercise habits until she went to college, where she struggled with weight gain due to not working out as much as she did when she was in sports. She started @HealthByMads to hold herself accountable for leading a healthier lifestyle, and says it “gives her a sense of purpose.”</p><p><br></p><p>Keep reading to learn more about Madison’s health and self-confidence journey, how she maintains a balanced diet and workout routine, and to try her clean and simple, collagen smoothie bowl recipe that features her favorite Wholy Dose product.</p><p><br></p><p><br></p></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606230244105" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606230244105"><div class="elm text-edit gf-elm-left gf-elm-left-lg gf-elm-left-md gf-elm-left-sm gf-elm-left-xs" data-gemlang="en" data-exc=""><p><b><br></b></p><p><b>Tell us a little bit about yourself, Where are you from? What do you do? What does your typical week look like?&nbsp;</b></p><p><b><br></b></p></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606230391790" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606230391790"><div class="elm text-edit gf-elm-left gf-elm-left-lg gf-elm-left-md gf-elm-left-sm gf-elm-left-xs" data-gemlang="en" data-exc=""><p>Hi! My name is Mads &amp; I live in New York. Been living in New Jersey with my family throughout quarantine, so my routine here has been a bit different than it is when I’m in the city. During normalcy, a typical week in my life includes pretty much the same day to day routine: wake up, workout, go to class and go to work! Being a student, having a job, and trying to prioritize a health &amp; wellness community page isn’t the easiest, but I certainly always have something to do which I love. Staying busy is key for me, keeps me motivated for sure.</p><p><br></p></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606230335996" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606230335996"><div class="elm text-edit gf-elm-left gf-elm-left-lg gf-elm-left-md gf-elm-left-sm gf-elm-left-xs" data-gemlang="en" data-exc=""><p><b><br></b></p><p><b>Share with our audience your story! What’s your journey? How did you start in the healthy and wellness field?&nbsp;</b></p><p><b><br></b></p></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606230420312" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606230420312"><div class="elm text-edit gf-elm-left gf-elm-left-lg gf-elm-left-md gf-elm-left-sm gf-elm-left-xs" data-gemlang="en" data-exc=""><p>I’ve been an athlete my whole life and was always working out during practices. Because of this, I never had to worry about what I ate, because my metabolism was so high and I was burning everything off. One may think this is an amazing thing...how could you complain? But when I say I burnt everything off, I mean everything. I really was twig thin, and I was constantly feeling insecure about how I looked. This led me to eat a lot more (not necessarily healthy), and once I began college, I stopped working out so much. As you may guess, this caused weight gain in places I wasn’t expecting.&nbsp;</p><p><br></p><p>I went from one extreme to the other so quickly and felt awful about it. Meanwhile, my stomach was constantly in pain, bloated all of the time, and I just didn’t feel good after eating food. I knew I needed to do something, which is why I began to research more about health and nutrition. The past two years I have truly dedicated my time to all things health, nutrition and wellness related, in pursuit of improving my overall wellbeing. I have discovered so much more about myself than I ever could have imagined, and my Instagram has led me to feel so safe in the health and wellness community. I could not be more thankful for my journey.</p><p><br></p></div></div><!--gfsplit--><div data-label="Row" class="gf_row" id="r-1606231350529" data-icon="gpicon-row" data-id="1606231350529" data-extraclass=""><div class="gf_column gf_col-lg-6 gf_col-md-6 gf_col-sm-6 gf_col-xs-12" id="c-1606231350538" data-id="1606231350538"><div data-label="Text Block" data-key="text-block" id="e-1606230345222" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606230345222"><div class="elm text-edit gf-elm-left gf-elm-left-lg gf-elm-left-md gf-elm-left-sm gf-elm-left-xs" data-gemlang="en" data-exc=""><p><b><br></b></p><p><b>How did you come to start Health By Mads? What’s it like having your own platform, and building something you believe in?&nbsp;</b></p><p><b><br></b></p></div></div><div data-label="Text Block" data-key="text-block" id="e-1606230452392" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606230452392"><div class="elm text-edit gf-elm-left gf-elm-left-lg gf-elm-left-md gf-elm-left-sm gf-elm-left-xs" data-gemlang="en" data-exc=""><p>I started Health By Mads just over a year ago at a time I thought it was best to begin holding myself accountable for my health and wellness. I started the page to connect and be inspired by others, and to share my own recipes and meals. It began solely revolving around food, but quickly turned into more of a lifestyle page. This page has become apart of me, and I truly don’t know where I would be or who I would be without it. It gives me a sense of purpose, and allows me to connect better with myself and others. I have met so many people via my platform who share similar mindsets and interests. It really is amazing to think about.</p><p><br></p></div></div><div data-label="Text Block" data-key="text-block" id="e-1606230354537" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606230354537"><div class="elm text-edit gf-elm-left gf-elm-left-lg gf-elm-left-md gf-elm-left-sm gf-elm-left-xs" data-gemlang="en" data-exc=""><p><b><br></b></p><p><b>What does health + wellness mean to you?</b></p><p><b><br></b></p></div></div><div data-label="Text Block" data-key="text-block" id="e-1606230474099" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606230474099"><div class="elm text-edit gf-elm-left gf-elm-left-lg gf-elm-left-md gf-elm-left-sm gf-elm-left-xs" data-gemlang="en" data-exc=""><p>I would be nowhere without my focus on health &amp; wellness. Prioritizing myself and my wellbeing has made me who I am today and it brings me so much joy to be a part of the health &amp; wellness community on Instagram. Being healthy is not as simple as eating right. Being healthy has to do with your mind, your thoughts, your nutrition, your activeness, your happiness, and so much more.&nbsp;</p><p><br></p></div></div></div><div class="gf_column gf_col-lg-6 gf_col-md-6 gf_col-sm-6 gf_col-xs-12" id="c-1606231350539" data-id="1606231350539"><div data-label="Image" data-key="image" id="e-1606231368522" class="element-wrap" data-icon="gpicon-image" data-ver="1.0" data-id="1606231368522" data-resolution="3000x3000"><div class="elm gf-elm-center gf_elm-left-xs gf-elm-center-lg gf-elm-center-md gf-elm-center-sm gf-elm-center-xs" data-exc=""><img src="https://ucarecdn.com/4be134ac-1503-46c1-a79a-74641c2862f1/-/format/auto/-/preview/3000x3000/-/quality/lighter/" alt="" class="gf_image" data-gemlang="en" data-width="auto" data-height="auto" title="" natural-width="792" natural-height="1082"></div></div></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606230364748" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606230364748"><div class="elm text-edit gf-elm-left gf-elm-left-lg gf-elm-left-md gf-elm-left-sm gf-elm-left-xs" data-gemlang="en" data-exc=""><p><b><br></b></p><p><b>What are difficulties you’ve ran into with incorporating health and wellness into your life? Do you have advice for someone who might run into the same?&nbsp;</b></p><p><b><br></b></p></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606230487609" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606230487609"><div class="elm text-edit gf-elm-left gf-elm-left-lg gf-elm-left-md gf-elm-left-sm gf-elm-left-xs" data-gemlang="en" data-exc=""><p>The biggest difficulty I have had is regarding food and dieting. At a point in my life, I became obsessive with what I ate, to the point where I would heavily restrict myself all the time, and it took a massive toll on my mental health. There is a fine line between a healthy diet and becoming obsessive with your food, and I crossed it. I think it can be troublesome when we put too many restrictions on ourselves food wise, but there is always a great need to have at least some restrictions. Everything resorts back to balance and finding healthy balances between eating nutritious foods that are good for you, while not placing too many limitations on yourself and also eating foods that are good for your soul.</p><p><br></p></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606230373192" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606230373192"><div class="elm text-edit gf-elm-left gf-elm-left-lg gf-elm-left-md gf-elm-left-sm gf-elm-left-xs" data-gemlang="en" data-exc=""><p><b><br></b></p><p><b>What is your health and wellness routine?</b></p><p><b><br></b></p></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606230501340" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606230501340"><div class="elm text-edit gf-elm-left gf-elm-left-lg gf-elm-left-md gf-elm-left-sm gf-elm-left-xs" data-gemlang="en" data-exc=""><p>While my routine often differs, the one thing I do every single morning is wake up and get straight into a workout. Whether it is HIIT, weight training, cardio, yoga, or just a long walk, I always move my body first thing. Being productive early in the morning really gets me going, and those days when I sleep in too late and am sluggish unintentionally are always the most unproductive ones for me. Of course, I always love days devoted to sleeping in and doing nothing...love them. But, again, it is about balance! I workout 5-6 times every week, and the other day or two that I don’t, I usually dedicate to getting a long sleep and just resting.</p><p><br></p></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606231151825" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606231151825"><div class="elm text-edit gf-elm-left gf-elm-center-lg gf-elm-center-md gf-elm-center-sm gf-elm-center-xs" data-gemlang="en" data-exc=""><p><strong><br></strong></p><p><strong>MADISON'S HEALTHY COLLAGEN SMOOTHIE BOWL RECIPE</strong></p></div></div><!--gfsplit--><div data-label="Row" class="gf_row" id="r-1606230518131" data-icon="gpicon-row" data-id="1606230518131"><div class="gf_column gf_col-lg-6 gf_col-md-6 gf_col-sm-6 gf_col-xs-12" id="c-1606230518194" data-id="1606230518194"><div data-label="Image" data-key="image" id="e-1606230520783" class="element-wrap" data-icon="gpicon-image" data-ver="1.0" data-id="1606230520783" data-resolution="3000x3000"><div class="elm gf-elm-center gf_elm-left-xs gf-elm-center-lg gf-elm-center-md gf-elm-center-sm gf-elm-center-xs" data-exc=""><img src="https://ucarecdn.com/ed62ebb7-1c6a-4c24-9b5c-991e65282aec/-/format/auto/-/preview/3000x3000/-/quality/lighter/" alt="" class="gf_image" data-gemlang="en" data-width="auto" data-height="auto" title="" natural-width="1200" natural-height="1200"></div></div></div><div class="gf_column gf_col-lg-6 gf_col-md-6 gf_col-sm-6 gf_col-xs-12" id="c-1606230518249" data-id="1606230518249"><div data-label="Text Block" data-key="text-block" id="e-1606230807804" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606230807804"><div class="elm text-edit gf-elm-left gf-elm-left-lg gf-elm-left-md gf-elm-left-sm gf-elm-left-xs" data-gemlang="en" data-exc=""><div style="font-size: 17px; letter-spacing: 0.25px;"><span style="color: inherit; font-family: inherit; font-size: inherit; font-weight: 700; text-align: inherit;">Ingredients</span></div><div style="font-size: 17px; letter-spacing: 0.25px;"><br><div>– 1 scoop or packet, Wholy Dose UNFLAVORED Beauty Superfood Powder&nbsp;</div><div>– 1 cup, frozen blueberries</div><div>– 1/2 banana</div><div>– Coconut milk (or other plant-based milk)</div><div>– Ice</div><div>– Toppings of choice</div><div><br></div><div><span style="font-weight: 700;">Directions</span></div><div><span style="font-weight: 700;"><br></span></div><div>1. Pour frozen blueberries and banana into blender</div><div>2. Add Wholy Dose UNFLAVORED Powder</div><div>3. Add milk, blend on high until smooth</div><div>4. Top with your favorite toppings (Madison used goji berries, hemp seeds, and bee pollen)</div><div>5. Enjoy!</div></div></div></div></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606231549091" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606231549091"><div class="elm text-edit gf-elm-left gf-elm-left-lg gf-elm-left-md gf-elm-left-sm gf-elm-left-xs" data-gemlang="en" data-exc=""><p><b><br></b></p><p><b>Where can our audience find you?</b></p><p><b><br></b></p></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606231556391" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606231556391"><div class="elm text-edit gf-elm-left gf-elm-left-lg gf-elm-left-md gf-elm-left-sm gf-elm-left-xs" data-gemlang="en" data-exc=""><p>My Instagram page is @HealthByMads, and my website is madisonmaley.com. Truly cannot believe how much the community has grown over the past year, and I hope to keep expanding both my page and my site!</p><p><br></p><p><br></p></div></div><!--gfsplit--></div><div id="divContentBk"></div><!--End_Gem_Page_Main_Editor-->
+        </div>                      {% if blog.comments_enabled? %}          {% if number_of_comments > 0 %}
+            <hr class="hr--large">
+            <h2 class="h3 text-center">{{ 'blogs.comments.with_count' | t: count: number_of_comments }}</h2>
+            <hr class="hr--small hr--clear">
+          {% endif %}          {% paginate article.comments by 20 %}
+            
+            <div id="comments">              {% if comment and comment.created_at %}
+                <p class="note form-success">
+                  {% if blog.moderated? %}
+                    {{ 'blogs.comments.success_moderated' | t }}
+                  {% else %}
+                    {{ 'blogs.comments.success' | t }}
+                  {% endif %}
+                </p>
+              {% endif %}              {% if number_of_comments > 0 %}
+                <ul class="no-bullets">
+                  
+                  {% if comment and comment.created_at %}
+                    <li id="{{ comment.id }}" class="comment first{% if article.comments_count == 0 %} last{% endif %}">
+                      {% include 'comment' %}
+                    </li>
+                  {% endif %}                  
+                  {% for comment in article.comments %}
+                    <li id="{{ comment.id }}" class="comment{% unless number_of_comments > article.comments_count %}{% if forloop.first %} first{% endif %}{% endunless %}{% if forloop.last %} last {% endif %}">
+                      {% include 'comment' %}
+                    </li>                    {% unless forloop.last %}
+                      <li><hr class="hr--clear"></li>
+                    {% endunless %}
+                  {% endfor %}
+                </ul>                {% if paginate.pages > 1 %}
+                  {% include 'pagination' %}
+                {% endif %}              {% endif %}              <hr class="hr--large">              <h2 class="h3 text-center">{{ 'blogs.comments.title' | t }}</h2>
+              <hr class="hr--small hr--clear">              <div class="form-vertical">
+                {% form 'new_comment', article %}                  {{ form.errors | default_errors }}                  <div class="grid grid--small">
+                    <div class="grid__item large--one-half">
+                      <label for="CommentAuthor" class="hidden-label">{{ 'blogs.comments.name' | t }}</label>
+                      <input class="input-full{% if form.errors contains 'author' %} error{% endif %}" type="text" name="comment[author]" placeholder="{{ 'blogs.comments.name' | t }}" id="CommentAuthor" value="{{ form.author }}" autocapitalize="words">
+                    </div>
+                    <div class="grid__item large--one-half">
+                      <label for="CommentEmail" class="hidden-label">{{ 'blogs.comments.email' | t }}</label>
+                      <input class="input-full{% if form.errors contains 'email' %} error{% endif %}" type="email" name="comment[email]" placeholder="{{ 'blogs.comments.email' | t }}" id="CommentEmail" value="{{ form.email }}" autocorrect="off" autocapitalize="off">
+                    </div>
+                  </div>                  <label for="CommentBody" class="hidden-label">{{ 'blogs.comments.message' | t }}</label>
+                  <textarea class="input-full{% if form.errors contains 'body' %} error{% endif %}" name="comment[body]" id="CommentBody" placeholder="{{ 'blogs.comments.message' | t }}">{{ form.body }}</textarea>                  <div class="text-center">
+                    {% if blog.moderated? %}
+                      <p>{{ 'blogs.comments.moderated' | t }}</p>
+                    {% endif %}                    <input type="submit" class="btn" value="{{ 'blogs.comments.post' | t }}">
+                  </div>                {% endform %}
+              </div>            </div>
+          {% endpaginate %}
+        {% endif %}      </div>
+    </div>  </article>
+</div>{% if section.settings.upsellart != blank %}
+<br/><br/>
+<div class="wrapper">
+  <h2 style="text-align: center">{{ section.settings.upselltextart }}</h2>
+  <div class="new-collection-wrap" style="padding-bottom:15px;">
+    <div class="grid-uniform">
+      {% assign grid_item_width = 'small--one-half medium--one-half large--one-quarter' %}
+      {% for product in collections[section.settings.upsellart].products limit: 4 %}
+        {% include 'product-grid-item' %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endif %}<hr class="hr--medium hr--clear">
+<div class="grid__item" style="display:flex">
+ <div class="leftalign">
+  <a href="{{ blog.url }}" class="custblog">&larr; {{ 'blogs.article.back_to_blog' | t: title: blog.title }}</a>
+  </div>
+  <div class="centeralignshare custblog">
+    Share This Article
+  </div></div>
+          {% include 'social-sharing', share_title: article.title, share_permalink: article.url, share_image: article.image %}
+       <style>
+  .centeralignshare
+  {
+   text-align:center;flex:0 1 33% ;
+  }
+  .leftalign
+  {
+  text-align:left; flex:0 1 33%;
+  }
+  .custblog
+  {
+    font-weight: 500!important;
+    font-size: 15px!important;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #1D1D1D;
+  }
+</style>{% section 'featured-products' %}
+<!--GEM_FOOTER-->
+{% capture GEM_FOOTER_SCRIPT %}
+<script data-instant-track type="text/javascript">
+	var pageLibs = [		'{{ 'gem-article-492831178946.js' | asset_url }}',	];
+</script>
+<script data-instant-track type="text/javascript">
+	var GEMVENDOR = GEMVENDOR || (function(){		var _js = {};		return {			init: function(Args) {				_js = Args;			},			getLibs: function() {				return _js;			}		};	}());	GEMVENDOR.init(pageLibs);</script>
+<script data-instant-track type="text/javascript" src="https://d1um8515vdn9kb.cloudfront.net/files/gempagev2.js?v=1.0" class="gf-script" defer></script>
+{% endcapture %}
+<!--GEM_FOOTER_END-->

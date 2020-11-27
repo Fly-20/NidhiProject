@@ -1,0 +1,152 @@
+{% comment %}
+	GEMPAGE BUILDER (https://apps.shopify.com/gempage)
+
+	You SHOULD NOT modify source code in this page because
+	It is automatically generated from GEMPAGE BUILDER
+	Try to edit page with the live editor.
+{% endcomment %}
+<!--GEM_HEADER-->
+<link data-instant-track rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" class="gf-style" />
+<link data-instant-track rel="stylesheet" type="text/css" href="https://d1um8515vdn9kb.cloudfront.net/files/vendor.css?refresh=1" class="gf-style" />
+<link data-instant-track rel="stylesheet" type="text/css" href="{{ 'gem-article-384133365847.css' | asset_url }}" class="gf_page_style">
+<!--GEM_HEADER_END-->
+<!-- /templates/article.liquid --><!-- /templates/article.liquid -->
+{% assign number_of_comments = article.comments_count %}{% if comment and comment.created_at %}
+  {% assign number_of_comments = article.comments_count | plus: 1 %}
+{% endif %}<div class="grid padding-15-xs">
+  <article class="grid__item large--five-sixths push--large--one-twelfth article" itemscope itemtype="http://schema.org/Article">    <div class="grid">
+      <div class="grid__item large--four-fifths push--large--one-tenth">
+        <div class="article-img-container">
+          {% assign img_url = article.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
+          <img class="article__featured-image lazyload"
+               src="{{ article.image | img_url: '300x300' }}"
+               data-src="{{ img_url }}"
+               data-widths="[310, 360, 480, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+               data-aspectratio="{{ article.image.aspect_ratio }}"
+               data-sizes="auto"
+               alt="{{ article.title | escape }}">
+        </div>
+    <header class="section-header">
+      <h1>{{ article.title }}</h1>
+      <!--<hr class="hr--small">-->
+       <div class="article_tag">
+      <p>
+        <span class="date no-margin"><time datetime="{{ article.published_at | date: '%Y-%m-%d' }}">{{ article.published_at | date: format: 'month_day_year' }}</time></span>
+      
+      <ul class="tags tags--article inline-list">
+          {% include 'tags-article' %}
+        </ul>
+         </p>
+      </div>
+    </header>
+      </div>
+    </div>
+    <hr class="full light-grey">
+    <div class="grid">
+      <div class="trial">
+        
+        <div class="rte--indented-images" itemprop="articleBody">
+          <!--Gem_Page_Main_Editor--><div class="clearfix"></div><div class="gryffeditor"><div data-label="Image" data-key="image" id="e-1606250171906" class="element-wrap" data-icon="gpicon-image" data-ver="1.0" data-id="1606250171906" data-resolution="3000x3000"><div class="elm gf-elm-center gf_elm-left-xs gf-elm-center-lg gf-elm-center-md gf-elm-center-sm gf-elm-center-xs" data-exc=""><img src="https://ucarecdn.com/f3e374d9-5a6a-41f8-8c40-cb5f12acf5af/-/format/auto/-/preview/3000x3000/-/quality/lighter/" alt="" class="gf_image" data-gemlang="en" data-width="auto" data-height="auto" title="" natural-width="2340" natural-height="1152"></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606250337296" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606250337296"><div class="elm text-edit gf-elm-left gf-elm-left-lg gf-elm-left-md gf-elm-left-sm gf-elm-left-xs" data-gemlang="en" data-exc=""><p><br></p><p>The matcha craze is one that has skyrocketed in recent years and is proving to continue. You’ve likely heard of or have seen it in various products such as lattes, drinks, or desserts. But, what exactly is matcha? What are the benefits of drinking matcha? Should you swap coffee for matcha?</p><p><br></p></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606250324057" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606250324057"><div class="elm text-edit gf-elm-left" data-gemlang="en"><p><span style="font-weight: 700; font-family: Montserrat; font-size: 35px; letter-spacing: 0.75px;">What is Matcha?</span><br></p></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606250288969" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606250288969"><div class="elm text-edit gf-elm-left gf-elm-left-lg gf-elm-left-md gf-elm-left-sm gf-elm-left-xs" data-gemlang="en" data-exc=""><p><br></p><p>Matcha is a type of green tea made from young tea leaves that are grounded into a fine velvety powder. Like green tea, matcha comes from the Camellia sinensis plant. However, matcha is grown differently and has more nutritional value than traditional green tea.&nbsp;&nbsp;</p><p><br></p><p>Matcha plants are covered in shade before being harvested. The shade increases chlorophyll levels (which gives it its vibrant green color and enhances the number of nutrients) and L-Theanine (an amino acid responsible for promoting relaxation). The stems, twigs, and other unneeded parts are then removed and the leaves are grounded into a fine powder. Matcha contains powerful antioxidants called polyphenols (particularly catechins) which have been tied to fighting free radicals and hold a number of health and beauty benefits.&nbsp;</p><p><br></p></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606250365846" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606250365846"><div class="elm text-edit gf-elm-left" data-gemlang="en"><p><font face="Montserrat"><span style="font-size: 35px; letter-spacing: 0.75px;"><b>What Does Matcha Taste Like?</b></span></font></p></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606250390592" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606250390592"><div class="elm text-edit gf-elm-left gf-elm-left-lg gf-elm-left-md gf-elm-left-sm gf-elm-left-xs" data-gemlang="en" data-exc=""><p><br></p><p>Matcha tastes like green tea, but is much more fuller in flavor. There are various grades of matcha, ranging from low-quality to premium-quality. Low-quality matcha is bitter and has a yellow-green hue, while high-quality matcha has a sweet herbal taste that is fully embodied in flavor and has a vibrant green hue.&nbsp;</p><p><br></p></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606250406850" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606250406850"><div class="elm text-edit gf-elm-left" data-gemlang="en"><p><font face="Montserrat"><span style="font-size: 35px; letter-spacing: 0.75px;"><b>Is Matcha the Same as Green Tea?</b></span></font></p></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606250646182" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606250646182"><div class="elm text-edit gf-elm-left gf-elm-left-lg gf-elm-left-md gf-elm-left-sm gf-elm-left-xs" data-gemlang="en" data-exc=""><p><br></p><p>Although matcha and green tea come from the same leaf, they’re quite different in terms of nutrients. Matcha is made of the entire leaf, while green tea is essentially steeped leaves. Because matcha is made of the entire leaf, it contains much more nutrients and antioxidants than traditional green tea. In fact, studies indicate that matcha contains 137 times more antioxidants compared to normal green tea.</p><p><br></p></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606250512157" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606250512157"><div class="elm text-edit gf-elm-left" data-gemlang="en"><p><font face="Montserrat"><span style="font-size: 35px; letter-spacing: 0.75px;"><b>Benefits of Matcha</b></span></font></p><p><font face="Montserrat"><span style="font-size: 35px; letter-spacing: 0.75px;"><b><br></b></span></font></p></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606250511948" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606250511948"><div class="elm text-edit gf-elm-left" data-gemlang="en"><p><font face="Montserrat"><span style="font-size: 35px; letter-spacing: 0.75px;"><b>1. Detoxifying&nbsp;</b></span></font></p></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606250651317" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606250651317"><div class="elm text-edit gf-elm-left gf-elm-left-lg gf-elm-left-md gf-elm-left-sm gf-elm-left-xs" data-gemlang="en" data-exc=""><p><br></p><p>Because matcha is grown in the shade, it is packed with chlorophyll, a molecule with powerful detoxifying properties. Matcha’s ability to naturally detoxify the body includes the capability to remove toxins and heavy metals from the body.</p><p><br></p></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606250511660" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606250511660"><div class="elm text-edit gf-elm-left" data-gemlang="en"><p><b style="color: inherit; text-align: inherit; font-size: 35px; letter-spacing: 0.75px; font-family: Montserrat;">2. Boosts Metabolism and Aids With Weight Loss</b></p></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606250708134" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606250708134"><div class="elm text-edit gf-elm-left gf-elm-left-lg gf-elm-left-md gf-elm-left-sm gf-elm-left-xs" data-gemlang="en" data-exc=""><p><br></p><p>Turns out, matcha can help you lose weight by boosting your metabolism and utilizing fat for energy through its high levels of antioxidants (particularly, catechins). It helps burn calories and fat, especially during exercise. Studies have found that matcha can help reduce body weight and body fat mass through an increase in metabolism. Moreover, a review of 11 studies indicated that matcha can reduce body weight and maintain the weight loss.</p><p><br></p></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606250511318" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606250511318"><div class="elm text-edit gf-elm-left" data-gemlang="en"><p><font face="Montserrat"><span style="font-size: 35px; letter-spacing: 0.75px;"><b>3. Increases Energy Levels</b></span></font></p></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606250694048" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606250694048"><div class="elm text-edit gf-elm-left gf-elm-left-lg gf-elm-left-md gf-elm-left-sm gf-elm-left-xs" data-gemlang="en" data-exc=""><p><br></p><p>Matcha contains a combination of caffeine and an amino acid called L-Theanine. Studies reveal that this specific combination that is found in matcha provides sustained energy (without the jitters, rush, or crash), while increasing alertness and maintaining calmness.</p><p><br></p><p>Because matcha offers sustained energy, a number of people have reported switching from coffee to matcha.</p><p><br></p></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606250511017" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606250511017"><div class="elm text-edit gf-elm-left" data-gemlang="en"><p><font face="Montserrat"><span style="font-size: 35px; letter-spacing: 0.75px;"><b>4. Improves Cognitive Function and Mood&nbsp;</b></span></font></p></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606250728333" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606250728333"><div class="elm text-edit gf-elm-left gf-elm-left-lg gf-elm-left-md gf-elm-left-sm gf-elm-left-xs" data-gemlang="en" data-exc=""><p><br></p><p>In addition to increasing energy, matcha helps improve mood and mental clarity. Research shows that it has the ability to improve cognitive performance, mental clarity, and overall mood. Notably, it is the combination of caffeine and L-Theanine that has been proven to improve cognitive performance and mental alertness.&nbsp;</p><p><br></p></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606250510564" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606250510564"><div class="elm text-edit gf-elm-left" data-gemlang="en"><p><font face="Montserrat"><span style="font-size: 35px; letter-spacing: 0.75px;"><b>5. Reduce Stress</b></span></font></p></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606250743823" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606250743823"><div class="elm text-edit gf-elm-left gf-elm-left-lg gf-elm-left-md gf-elm-left-sm gf-elm-left-xs" data-gemlang="en" data-exc=""><p><br></p><p>Matcha contains L-Theanine, an amino acid that produces alpha waves in the brain to stimulate relaxation and calmness, reduce everyday stress, and reduce tension. Furthermore, research shows that matcha has a direct effect on the brain and helps stimulate relaxation and calmness - this, in turn, helps to reduce overall stress and anxiety.</p><p><br></p></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606250510149" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606250510149"><div class="elm text-edit gf-elm-left" data-gemlang="en"><p><font face="Montserrat"><span style="font-size: 35px; letter-spacing: 0.75px;"><b>6. Anti-aging</b></span></font></p></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606250762396" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606250762396"><div class="elm text-edit gf-elm-left gf-elm-left-lg gf-elm-left-md gf-elm-left-sm gf-elm-left-xs" data-gemlang="en" data-exc=""><p><br></p><p>Matcha is a powerhouse of antioxidants (particularly catechins), which have been proven to fight against free radicals and protect the skin from UV damage. Research shows that free radicals can cause damage to the skin and increase the aging process (amongst other things such as cause to sickness). Study also shows that consuming matcha over a period of time can improve skin elasticity and texture.&nbsp;</p><p><br></p></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606250509708" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606250509708"><div class="elm text-edit gf-elm-left" data-gemlang="en"><p><font face="Montserrat"><span style="font-size: 35px; letter-spacing: 0.75px;"><b>7. Supports Immune Health&nbsp;</b></span></font></p></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606250778918" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606250778918"><div class="elm text-edit gf-elm-left gf-elm-left-lg gf-elm-left-md gf-elm-left-sm gf-elm-left-xs" data-gemlang="en" data-exc=""><p><br></p><p>Our bodies are constantly attacked by oxidative stress - damage caused to our cells from having an imbalance of free radicals and antioxidants in the body. Moreover, science shows that oxidative stress can lead to a number of illnesses and diseases. Research shows that matcha can decrease oxidative stress and protect the body against bacterial infections through its abundant antioxidant properties (specifically, catechins) which, in turn, strengthens the immune system.</p><p><br></p></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606250616425" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606250616425"><div class="elm text-edit gf-elm-left" data-gemlang="en"><p><font face="Montserrat"><span style="font-size: 35px; letter-spacing: 0.75px;"><b>8. Promotes Better Sleep</b></span></font></p></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606250793848" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606250793848"><div class="elm text-edit gf-elm-left gf-elm-left-lg gf-elm-left-md gf-elm-left-sm gf-elm-left-xs" data-gemlang="en" data-exc=""><p><br></p><p>Matcha contains L-theanine, which has been found to promote relaxation and better sleep quality by calming brain chemicals and boosting levels of GABA, serotonin, and dopamine. Studies show that lower than normal levels of GABA can lead to anxiety, sleep issues, and even depression. GABA plays a vital role in cognition, the body’s response to stress, and stimulates relaxation through lowering “excitatory” brain chemicals.</p><p><br></p></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606250611367" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606250611367"><div class="elm text-edit gf-elm-left" data-gemlang="en"><p><font face="Montserrat"><span style="font-size: 35px; letter-spacing: 0.75px;"><b>9. Helps Lower Cholesterol&nbsp;</b></span></font></p></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606250811169" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606250811169"><div class="elm text-edit gf-elm-left gf-elm-left-lg gf-elm-left-md gf-elm-left-sm gf-elm-left-xs" data-gemlang="en" data-exc=""><p><br></p><p>A number of studies have found that matcha helps lower LDL cholesterol (bad cholesterol) and total cholesterol. This is due to the high levels of antioxidants (catechins) found in matcha. Additionally, studies show that matcha can also lower high blood pressure and the risk of heart disease.</p><p><br></p></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606250636459" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606250636459"><div class="elm text-edit gf-elm-left" data-gemlang="en"><p><font face="Montserrat"><span style="font-size: 35px; letter-spacing: 0.75px;"><b>Side Effects of Matcha</b></span></font></p></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606250829895" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606250829895"><div class="elm text-edit gf-elm-left gf-elm-left-lg gf-elm-left-md gf-elm-left-sm gf-elm-left-xs" data-gemlang="en" data-exc=""><p><br></p><p>It’s important to consume matcha in moderation and not to go overboard. It contains caffeine, which can stimulate side effects such as a headache, insomnia, or irritability when consumed in excess or for those who are caffeine sensitive. If you have a health condition or are taking medication, always consult your practitioner before use.</p></div></div><!--gfsplit--></div><div id="divContentBk"></div><!--End_Gem_Page_Main_Editor-->
+        </div>                      {% if blog.comments_enabled? %}          {% if number_of_comments > 0 %}
+            <hr class="hr--large">
+            <h2 class="h3 text-center">{{ 'blogs.comments.with_count' | t: count: number_of_comments }}</h2>
+            <hr class="hr--small hr--clear">
+          {% endif %}          {% paginate article.comments by 20 %}
+            
+            <div id="comments">              {% if comment and comment.created_at %}
+                <p class="note form-success">
+                  {% if blog.moderated? %}
+                    {{ 'blogs.comments.success_moderated' | t }}
+                  {% else %}
+                    {{ 'blogs.comments.success' | t }}
+                  {% endif %}
+                </p>
+              {% endif %}              {% if number_of_comments > 0 %}
+                <ul class="no-bullets">
+                  
+                  {% if comment and comment.created_at %}
+                    <li id="{{ comment.id }}" class="comment first{% if article.comments_count == 0 %} last{% endif %}">
+                      {% include 'comment' %}
+                    </li>
+                  {% endif %}                  
+                  {% for comment in article.comments %}
+                    <li id="{{ comment.id }}" class="comment{% unless number_of_comments > article.comments_count %}{% if forloop.first %} first{% endif %}{% endunless %}{% if forloop.last %} last {% endif %}">
+                      {% include 'comment' %}
+                    </li>                    {% unless forloop.last %}
+                      <li><hr class="hr--clear"></li>
+                    {% endunless %}
+                  {% endfor %}
+                </ul>                {% if paginate.pages > 1 %}
+                  {% include 'pagination' %}
+                {% endif %}              {% endif %}              <hr class="hr--large">              <h2 class="h3 text-center">{{ 'blogs.comments.title' | t }}</h2>
+              <hr class="hr--small hr--clear">              <div class="form-vertical">
+                {% form 'new_comment', article %}                  {{ form.errors | default_errors }}                  <div class="grid grid--small">
+                    <div class="grid__item large--one-half">
+                      <label for="CommentAuthor" class="hidden-label">{{ 'blogs.comments.name' | t }}</label>
+                      <input class="input-full{% if form.errors contains 'author' %} error{% endif %}" type="text" name="comment[author]" placeholder="{{ 'blogs.comments.name' | t }}" id="CommentAuthor" value="{{ form.author }}" autocapitalize="words">
+                    </div>
+                    <div class="grid__item large--one-half">
+                      <label for="CommentEmail" class="hidden-label">{{ 'blogs.comments.email' | t }}</label>
+                      <input class="input-full{% if form.errors contains 'email' %} error{% endif %}" type="email" name="comment[email]" placeholder="{{ 'blogs.comments.email' | t }}" id="CommentEmail" value="{{ form.email }}" autocorrect="off" autocapitalize="off">
+                    </div>
+                  </div>                  <label for="CommentBody" class="hidden-label">{{ 'blogs.comments.message' | t }}</label>
+                  <textarea class="input-full{% if form.errors contains 'body' %} error{% endif %}" name="comment[body]" id="CommentBody" placeholder="{{ 'blogs.comments.message' | t }}">{{ form.body }}</textarea>                  <div class="text-center">
+                    {% if blog.moderated? %}
+                      <p>{{ 'blogs.comments.moderated' | t }}</p>
+                    {% endif %}                    <input type="submit" class="btn" value="{{ 'blogs.comments.post' | t }}">
+                  </div>                {% endform %}
+              </div>            </div>
+          {% endpaginate %}
+        {% endif %}      </div>
+    </div>  </article>
+</div>{% if section.settings.upsellart != blank %}
+<br/><br/>
+<div class="wrapper">
+  <h2 style="text-align: center">{{ section.settings.upselltextart }}</h2>
+  <div class="new-collection-wrap" style="padding-bottom:15px;">
+    <div class="grid-uniform">
+      {% assign grid_item_width = 'small--one-half medium--one-half large--one-quarter' %}
+      {% for product in collections[section.settings.upsellart].products limit: 4 %}
+        {% include 'product-grid-item' %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endif %}<hr class="hr--medium hr--clear">
+<div class="grid__item" style="display:flex">
+ <div class="leftalign">
+  <a href="{{ blog.url }}" class="custblog">&larr; {{ 'blogs.article.back_to_blog' | t: title: blog.title }}</a>
+  </div>
+  <div class="centeralignshare custblog">
+    Share This Article
+  </div></div>
+          {% include 'social-sharing', share_title: article.title, share_permalink: article.url, share_image: article.image %}
+       <style>
+  .centeralignshare
+  {
+   text-align:center;flex:0 1 33% ;
+  }
+  .leftalign
+  {
+  text-align:left; flex:0 1 33%;
+  }
+  .custblog
+  {
+    font-weight: 500!important;
+    font-size: 15px!important;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #1D1D1D;
+  }
+</style>{% section 'featured-products' %}
+<!--GEM_FOOTER-->
+{% capture GEM_FOOTER_SCRIPT %}
+<script data-instant-track type="text/javascript">
+	var pageLibs = [		'{{ 'gem-article-384133365847.js' | asset_url }}',	];
+</script>
+<script data-instant-track type="text/javascript">
+	var GEMVENDOR = GEMVENDOR || (function(){		var _js = {};		return {			init: function(Args) {				_js = Args;			},			getLibs: function() {				return _js;			}		};	}());	GEMVENDOR.init(pageLibs);</script>
+<script data-instant-track type="text/javascript" src="https://d1um8515vdn9kb.cloudfront.net/files/gempagev2.js?v=1.0" class="gf-script" defer></script>
+{% endcapture %}
+<!--GEM_FOOTER_END-->

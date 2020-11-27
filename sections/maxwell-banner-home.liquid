@@ -5,8 +5,8 @@
   <div id="carousel-{{ block.id }}" class="carousel-cell">
     <div class="carousel-item">
       <a href="{% if block.settings.btn_link %}{{ block.settings.btn_link }}{% else %}javascript:void(0);{% endif %}">
-        <img class="new-banner-desktop" src="{{ block.settings.image_desk | img_url: 'master', scale: 2 }}">
-        <img class="new-banner-mobile" src="{{ block.settings.image_mob | img_url: 'master', scale: 2 }}">
+        <img class="medium--hide small--hide" src="{{ block.settings.image_desk | img_url: 'master', scale: 2 }}">
+        <img class="large--hide" src="{{ block.settings.image_mob | img_url: 'master', scale: 2 }}">
       </a>
       {% if block.settings.title != blank or block.settings.content != blank %}
       <div class="carousel-text">
@@ -49,12 +49,12 @@
           {
             "type": "image_picker",
             "id": "image_desk",
-            "label": "Image dekstop"
+            "label": "Image Desktop"
           },
           {
             "type": "image_picker",
             "id": "image_mob",
-            "label": "Image mobile"
+            "label": "Image Mobile"
           },
           {
             "type": "textarea",

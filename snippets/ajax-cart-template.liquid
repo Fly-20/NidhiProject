@@ -7,6 +7,7 @@
 
 {% endcomment %}
   <script id="CartTemplate" type="text/template">
+  {% render 'banana-stand-cart-top-container' %}
   {% raw %}
     <form action="/cart" method="post" novalidate class="cart ajaxcart">
       <div class="ajaxcart__inner ajaxcart__inner--has-fixed-footer">
@@ -94,7 +95,7 @@
           <p class="ajaxcart__savings text-center">{{{totalCartDiscount}}}</p>
         {{/if}}
 
-        <p class="ajaxcart__policies" style="font-size: 10px; text-align:right; color: #aaa;">{% endraw %}
+        <p class="ajaxcart__policies" style="font-size: 12px; text-align:right; color: #A1A1A1;">{% endraw %}
           {%- capture taxes_shipping_checkout -%}
             {%- if shop.taxes_included and shop.shipping_policy.body != blank -%}
               {{ 'cart.general.taxes_included_and_shipping_policy_html' | t: link: shop.shipping_policy.url }}

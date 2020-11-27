@@ -131,7 +131,7 @@
 
 @function color-control($color) {
   @if (lightness( $color ) > 40) {
-    @return #1c1d1d;
+    @return #1d1d1d;
   }
   @else {
     @return #fff;
@@ -500,11 +500,11 @@ $accentFontStyle: normal;
 
 @font-face {
   font-family: 'icons';
-  src: url('//cdn.shopify.com/s/files/1/0268/0055/4170/t/3/assets/icons.eot?v=7724070712136770586');
-  src: url('//cdn.shopify.com/s/files/1/0268/0055/4170/t/3/assets/icons.eot?v=7724070712136770586#iefix') format("embedded-opentype"),
-       url('//cdn.shopify.com/s/files/1/0268/0055/4170/t/3/assets/icons.woff?v=15743527235125733377') format("woff"),
-       url('//cdn.shopify.com/s/files/1/0268/0055/4170/t/3/assets/icons.ttf?v=17626037986604397421') format("truetype"),
-       url('//cdn.shopify.com/s/files/1/0268/0055/4170/t/3/assets/icons.svg?v=3525525708295100587#timber-icons') format("svg");
+  src: url('//cdn.shopify.com/s/files/1/0273/3670/4087/t/17/assets/icons.eot?v=7724070712136770586');
+  src: url('//cdn.shopify.com/s/files/1/0273/3670/4087/t/17/assets/icons.eot?v=7724070712136770586#iefix') format("embedded-opentype"),
+       url('//cdn.shopify.com/s/files/1/0273/3670/4087/t/17/assets/icons.woff?v=15743527235125733377') format("woff"),
+       url('//cdn.shopify.com/s/files/1/0273/3670/4087/t/17/assets/icons.ttf?v=17626037986604397421') format("truetype"),
+       url('//cdn.shopify.com/s/files/1/0273/3670/4087/t/17/assets/icons.svg?v=3525525708295100587#timber-icons') format("svg");
   font-weight: normal;
   font-style: normal;
 };
@@ -1589,7 +1589,7 @@ select {
   appearance: none;
   background-position: right center;
   background: {
-    image: url('//cdn.shopify.com/s/files/1/0268/0055/4170/t/3/assets/ico-select.svg?v=3340439965210837167');
+    image: url('//cdn.shopify.com/s/files/1/0273/3670/4087/t/17/assets/ico-select.svg?v=3340439965210837167');
     repeat: no-repeat;
     position: right 10px center;
     color: transparent;
@@ -1724,11 +1724,11 @@ label.error {
 /*================ Partials | Icons ================*/
 @font-face {
   font-family: 'icons';
-  src: url('//cdn.shopify.com/s/files/1/0268/0055/4170/t/3/assets/icons.eot?v=7724070712136770586');
-  src: url('//cdn.shopify.com/s/files/1/0268/0055/4170/t/3/assets/icons.eot?v=7724070712136770586#iefix') format('embedded-opentype'),
-    url('//cdn.shopify.com/s/files/1/0268/0055/4170/t/3/assets/icons.woff?v=15743527235125733377') format('woff'),
-    url('//cdn.shopify.com/s/files/1/0268/0055/4170/t/3/assets/icons.ttf?v=17626037986604397421') format('truetype'),
-    url('//cdn.shopify.com/s/files/1/0268/0055/4170/t/3/assets/icons.svg?v=3525525708295100587#timber-icons') format('svg');
+  src: url('//cdn.shopify.com/s/files/1/0273/3670/4087/t/17/assets/icons.eot?v=7724070712136770586');
+  src: url('//cdn.shopify.com/s/files/1/0273/3670/4087/t/17/assets/icons.eot?v=7724070712136770586#iefix') format('embedded-opentype'),
+    url('//cdn.shopify.com/s/files/1/0273/3670/4087/t/17/assets/icons.woff?v=15743527235125733377') format('woff'),
+    url('//cdn.shopify.com/s/files/1/0273/3670/4087/t/17/assets/icons.ttf?v=17626037986604397421') format('truetype'),
+    url('//cdn.shopify.com/s/files/1/0273/3670/4087/t/17/assets/icons.svg?v=3525525708295100587#timber-icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -3300,3 +3300,17 @@ $socialIconFontStack: 'icons';
   }
 }
 
+#shopify-section-product-template {.rte h4{
+  margin-bottom:10px;
+}
+}
+#shopify-section-product-template {.rte  p {
+    font-weight:500;
+  }
+}
+
+#shopify-section-product-template .i-block { .rte {
+	width: 120%;
+    margin-left: -10%;
+}
+}

@@ -1,33 +1,72 @@
 <div class="wrapper">
+  
+  <div class="results-block-text">
+      <h1 class="subheaders-custom-3">{{ section.settings.texttitle }}</h1>
+       <div class="rte">{{ section.settings.text }}</div>
+  </div>
+  
+    <div class="results-page-slider">
 	{% for block in section.blocks %}
 		{% case block.type %}
-			{% when 'text' %}
-            <div class="results-block-text">
-              <h1 class="subheaders-custom-3">{{ block.settings.texttitle }}</h1>
-              <div class="rte">{{ block.settings.text }}</div>
-            </div>
-			{% when 'title' %}
-				<h2 class="results-block-title">{{ block.settings.title }}</h2>
-			{% when 'one_image' %}
-				<img src="{{ block.settings.oneimage | img_url: '800x' }}" alt="" class="results-image">
-				<div class="results-image-caption">{{ block.settings.imagecaption }}</div>
+      
 			{% when 'two_images' %}
+      		<div class="carousel-cell">
 				<div class="results-image-left">
 					<img src="{{ block.settings.leftimage | img_url: '800x' }}" alt="">
-					<div class="results-image-caption">{{ block.settings.leftimagecaption }}</div>
+					<div class="results-image-caption" style="margin-top:10px;">
+                      {{ block.settings.leftimagecaption }}
+                      <p class="image-cap-des  margin--10"> {{ block.settings.leftimageshorttext }} </p>
+                  </div>
 				</div>
 				<div class="results-image-right">
 					<img src="{{ block.settings.rightimage | img_url: '800x' }}" alt="">
-					<div class="results-image-caption">{{ block.settings.rightimagecaption }}</div>
+					<div class="results-image-caption" style="margin-top:10px;">
+                      {{ block.settings.rightimagecaption }}
+                      <p class="image-cap-des margin--10"> {{ block.settings.rightimageshorttext }} </p>
+                  </div>
 				</div>
-				<div class="cf"></div>
+              <div style="clear: both"></div>
+              <br/>
+              <h3>{{ block.settings.slidertexttitle }}</h3>
+              <div class="image-cap-des">
+                {{ block.settings.slidertextdescription }}
+              </div>
+      </div>
+				
 		{% endcase %}
 	{% endfor %}
+   
+  </div>
+  
+  {% if section.settings.info_text-descri != blank %}
+  <div class="info-text">
+    {{ section.settings.info_text-descri }}
+  </div>
+   {% endif %}
 </div>
 
 
 {% schema %}
 {
+
+"settings": [
+	{
+     "id": "texttitle",
+      "type": "text",
+      "label": "Text for heading"
+    },
+    {
+      "id": "text",
+      "type": "html",
+      "label": "Text for description"
+    },
+      {
+        "id": "info_text-descri",
+        "type": "html",
+        "label": "Information text"
+      }
+  ],
+
   "name": "Results Content",
   "class": "page-result-content",
   "blocks": [
@@ -49,7 +88,7 @@
     },
     {
       "type": "title",
-      "name": "Section Title",
+      "name": "Slider images",
       "settings": [
         {
           "id": "title",
@@ -88,6 +127,11 @@
           "type": "richtext",
        		"label": "Left Image Caption"
         },
+		{
+          "id": "leftimageshorttext",
+          "type": "html",
+       		"label": "Left Image description"
+        },
         {
           "id": "rightimage",
           "type": "image_picker",
@@ -97,9 +141,26 @@
           "id": "rightimagecaption",
           "type": "richtext",
        		"label": "Right Image Caption"
-        }
+        },
+		{
+          "id": "rightimageshorttext",
+          "type": "html",
+       		"label": "Right Image description"
+        },
+	{
+     "id": "slidertexttitle",
+      "type": "text",
+      "label": "Text for heading"
+    },
+    {
+      "id": "slidertextdescription",
+      "type": "html",
+      "label": "Text for description"
+    }
+
       ]
     }
   ]
+
 }
 {% endschema %}

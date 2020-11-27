@@ -1,0 +1,152 @@
+{% comment %}
+	GEMPAGE BUILDER (https://apps.shopify.com/gempage)
+
+	You SHOULD NOT modify source code in this page because
+	It is automatically generated from GEMPAGE BUILDER
+	Try to edit page with the live editor.
+{% endcomment %}
+<!--GEM_HEADER-->
+<link data-instant-track rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" class="gf-style" />
+<link data-instant-track rel="stylesheet" type="text/css" href="https://d1um8515vdn9kb.cloudfront.net/files/vendor.css?refresh=1" class="gf-style" />
+<link data-instant-track rel="stylesheet" type="text/css" href="{{ 'gem-article-492831539394.css' | asset_url }}" class="gf_page_style">
+<!--GEM_HEADER_END-->
+<!-- /templates/article.liquid --><!-- /templates/article.liquid -->
+{% assign number_of_comments = article.comments_count %}{% if comment and comment.created_at %}
+  {% assign number_of_comments = article.comments_count | plus: 1 %}
+{% endif %}<div class="grid padding-15-xs">
+  <article class="grid__item large--five-sixths " itemscope itemtype="http://schema.org/Article">    <div class="grid">
+      <div class="grid__item ">
+        <div class="article-img-container">
+          {% assign img_url = article.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
+          <img class="article__featured-image lazyload"
+               src="{{ article.image | img_url: '300x300' }}"
+               data-src="{{ img_url }}"
+               data-widths="[310, 360, 480, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+               data-aspectratio="{{ article.image.aspect_ratio }}"
+               data-sizes="auto"
+               alt="{{ article.title | escape }}">
+        </div>
+    <header class="section-header">
+      <h1>{{ article.title }}</h1>
+      <!--<hr class="hr--small">-->
+       <div class="article_tag" style="display: flex;">
+      <p>
+        <span class="date no-margin"><time datetime="{{ article.published_at | date: '%Y-%m-%d' }}">{{ article.published_at | date: format: 'month_day_year' }}</time></span>
+      &#8231;
+         </p>
+      <ul class="tags tags--article inline-list">
+          {% include 'tags-article' %}
+        </ul>
+      </div>
+    </header>
+      </div>
+    </div>
+    <hr class="full light-grey">
+    <div class="grid">
+      <div class="trial">
+        
+        <div class="rte--indented-images" itemprop="articleBody">
+          <!--Gem_Page_Main_Editor--><div class="clearfix"></div><div class="gryffeditor"><div class="element-wrap" data-label="Text Block" id="e-1606243448126" data-icon="gpicon-textblock" data-ver="1" data-id="1606243448126"><div class="elm text-edit"></div></div><!--gfsplit--><div data-label="Row" class="gf_row" id="r-1606243502104" data-icon="gpicon-row" data-id="1606243502104"><div class="gf_column gf_col-lg-6 gf_col-md-6 gf_col-sm-6 gf_col-xs-12" id="c-1606243502076" data-id="1606243502076"><div data-label="Text Block" data-key="text-block" id="e-1606243515026" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606243515026"><div class="elm text-edit gf-elm-left gf-elm-left-lg gf-elm-left-md gf-elm-left-sm gf-elm-left-xs" data-gemlang="en" data-exc=""><p>"Haus of Glo had the honor of sitting down (virtually) with the founder &amp; CEO of Wholy Dose, Gina Holzer to discuss ingestible beauty and the significant role it plays in skin health. Wholy Dose is a wellness brand that primarily focuses on collagen-based powders that elevate your beauty, health and wellbeing. Like many young women and men, Gina struggled with a lack of self-confidence during her teenage years and needed a solution of how to cultivate more confidence instead of trying to alter her appearance. After experimenting with the use of Collagen, she found herself feeling more comfortable in her skin, as she noticed improvement in her skin health and hair growth. Today, she has created a clean beauty &amp; wellness brand that takes pride in driven results instead of hype."</p><p><br></p></div></div><div data-label="Text Block" data-key="text-block" id="e-1606243545123" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606243545123"><div class="elm text-edit gf-elm-left gf-elm-left-md gf-elm-left-sm gf-elm-left-xs gf-elm-left-lg" data-gemlang="en" data-exc=""><p><b><br></b></p><p><b>“Redefining beauty, starting and ending with you”</b></p></div></div></div><div class="gf_column gf_col-lg-6 gf_col-md-6 gf_col-sm-6 gf_col-xs-12" id="c-1606243502030" data-id="1606243502030"><div data-label="Image" data-key="image" id="e-1606243505516" class="element-wrap" data-icon="gpicon-image" data-ver="1.0" data-id="1606243505516" data-resolution="3000x3000"><div class="elm gf-elm-center gf_elm-left-xs gf-elm-center-lg gf-elm-center-md gf-elm-center-sm gf-elm-center-xs" data-exc=""><img src="https://ucarecdn.com/120c7ce3-3306-4fb9-a08d-5a76ceac9a05/-/format/auto/-/preview/3000x3000/-/quality/lighter/" alt="" class="gf_image rte__no-indent" data-gemlang="en" data-width="auto" data-height="auto" title="" natural-width="750" natural-height="767"></div></div></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606243637434" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606243637434"><div class="elm text-edit gf-elm-left gf-elm-left-md gf-elm-left-sm gf-elm-left-xs gf-elm-left-lg" data-gemlang="en" data-exc=""><p><br></p><p><b>&nbsp;HG:  What self-care practices are helping you cope with uncertainty or anxiety these days?</b></p><p><br></p><p>GH:  Maintaining my workout routine every morning and eating nourishing meals have definitely helped me stay healthy – mentally and physically. I've found that when I take care of my body, inside and out, I feel good, have more energy, manage stress better, and can get through the day with a clear and focused mind. Getting fresh air each day has also helped me cope with uncertainty and anxiety. I'll take breaks throughout the day, whether that's from work or to get my workout in, to go outside, unplug from the world through nature, and gather my thoughts. Finding that you-time is so important to clear your mind, collect your thoughts to become mindful, and step away from everything else that you have to be connected with throughout the day.</p><p><br></p><p><br></p><p><b>HG: What was the inspiration behind Wholy Dose?&nbsp;</b></p><p><br></p><p>GH: I grew up trying to change the way I looked and felt about myself. I never felt happy or confident in my own skin due to having problematic skin and extremely thin hair, eyelashes and eyebrows. I constantly was at battle with comparing myself to what I wanted to look like, only that was unattainable due to my genetics. This led me to always wear makeup when I left the house in order to feel at ease, but this became exhausting. So, I set out to find a solution and tried countless products over a span of 10 YEARS – from topicals to vitamins and food. But, nothing I tried gave me the results I yearned for so long. It was when I began to experiment with different supplement blends in my tiny NYC apartment that I found a unique combination of supplements that improved my skin and hair for the very first time – I'm talking pore-tightening, skin-glowing, eyebrow and eyelash lengthening results! I then began to accept myself for who I was and realized that comparison is unrealistic, but working on YOUR best is real, and everything you need to feel beautiful and confident is already in you.</p><p><br></p><p><br></p><p><br></p><p><b>HG:  How does collagen play an important role in skin health?</b></p><p><br></p><p>GH:  Collagen plays a crucial role in skin health and makes up roughly 75% of our skin. What that means is that our skin depends on collagen as a primary agent in keeping our skin look healthy and youthful. Of course, other factors such as getting enough sleep and maintaining a healthy diet is important as well, but collagen boosts your skin's health to maintain that natural glow from within through locking in hydration, as well as plump + smooth skin, even skin tone, and reduced fine lines. How does collagen do this? It supports the structure of skin cells (fibroblasts), so that when you begin experiencing changes in your skin due to age or other external factors, your skin is able to better retain its moisture and structure to stay healthy and youthful.</p><p><br></p><p><br></p><p><b>HG: Is there a specific age that you should begin to incorporate collagen into your wellness routine?</b></p><p><br></p><p>GH: The typical recommended age to start taking collagen is when you begin to reach your early 30's since that's when signs of aging begin to manifest. But, if you're someone who has specific skincare or wellness goals such as tightening your pores, evening out skin texture, or improving your energy, you can certainly start taking collagen as early as your early 20's. Some of our customers started taking collagen for the very first time with us as early as 18 years old, but that's dependent on the person taking it. If you haven't taken collagen and surpassed your earlier years, it's never too late to start! Collagen is incredible when it comes to not only skin and hair, but also health benefits such as immune and joint health.</p><p><br></p><p><br></p><p><br></p><p><b>HG: For those who are new to supplements, what Wholy Dose products are great for newbies?</b></p><p><br></p><p>GH: All Wholy Dose products contain the same key ingredients, which we call our Wholy Grail – collagen, biotin, and silica – so, I recommend those who are new to supplements or new to Wholy Dose to go with the product you can either easily incorporate into your daily routine or the flavor you like best. We have 4 different flavors: unflavored, matcha, cacao, and beauty tonic (which is a pomegranate flavored-drink), so there's a flavor for everyone! If you're someone who typically drinks coffee, tea, smoothies, or juices, UNFLAVORED is for you. For those who like matcha, definitely our MATCHA. For those who are chocolate lovers, go for our CACAO (restocking soon). For those who like flavored drinks, go for our BEAUTY TONIC.</p><p><br></p></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606243720309" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606243720309"><div class="elm text-edit gf-elm-left gf-elm-left-md gf-elm-left-sm gf-elm-left-xs gf-elm-center-lg" data-gemlang="en" data-exc=""><p><b><br></b></p><p><b>“There's no better feeling than when you recognize who you are and work on yourself, for no one other than yourself”</b></p><p><b><br></b></p></div></div><!--gfsplit--><div data-label="Row" class="gf_row" id="r-1606243953143" data-icon="gpicon-row" data-id="1606243953143"><div class="gf_column gf_col-lg-6 gf_col-md-6 gf_col-sm-6 gf_col-xs-12" id="c-1606243502076" data-id="1606243502076"><div data-label="Image" data-key="image" id="e-1606243953177" class="element-wrap" data-icon="gpicon-image" data-ver="1.0" data-id="1606243953177" data-resolution="3000x3000"><div class="elm gf-elm-center gf_elm-left-xs gf-elm-center-md gf-elm-center-sm gf-elm-center-xs gf-elm-center-lg" data-exc=""><img src="https://ucarecdn.com/c1cee694-8946-4c6b-bb4d-be53d86bef9b/-/format/auto/-/preview/3000x3000/-/quality/lighter/" alt="" class="gf_image rte__no-indent" data-gemlang="en" data-width="auto" data-height="auto" title="" natural-width="1500" natural-height="1500"></div></div></div><div class="gf_column gf_col-lg-6 gf_col-md-6 gf_col-sm-6 gf_col-xs-12" id="c-1606243502030" data-id="1606243502030"><div data-label="Text Block" data-key="text-block" id="e-1606243953204" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606243953204"><div class="elm text-edit gf-elm-left gf-elm-left-lg gf-elm-left-md gf-elm-left-sm gf-elm-left-xs" data-gemlang="en" data-exc=""><p><b>HG: On a lighter note, let’s wrap up with some rapid-fire questions! What is your definition of beauty?</b></p><p><br></p><p>GH: I believe that beauty doesn't have a definition, but rather, we are our own definition of beauty. At Wholy Dose, we redefine beauty, starting and ending with you. How you define beauty is up to you because you're the only person who can define what beauty means and feels like to you. To me, beauty is a whole feeling of appreciation, confidence, self-progress, and self-love for myself. There's no better feeling than when you recognize who you are and work on yourself, for no one other than yourself.</p><p><br></p><p><br></p><p><b>HG: Do you have any skincare rituals?</b></p><p><br></p><p>GH: Yes! Every morning I cleanse my face, spray with a rose + witch hazel mist, apply my benzoyl peroxide and moisturizer, then roll my face with a face roller, and finish with sunscreen. At night, I double cleanse, apply retinol, and finish with a moisturizer, and sometimes an eye oil. But, my biggest skincare ritual is taking my Wholy Dose collagen supplements and getting enough sleep each night.</p><p><br></p></div></div></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606243914460" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606243914460"><div class="elm text-edit gf-elm-left gf-elm-left-md gf-elm-left-sm gf-elm-left-xs gf-elm-left-lg" data-gemlang="en" data-exc=""><p>f</p></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606244235519" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606244235519"><div class="elm text-edit gf-elm-left gf-elm-left-lg gf-elm-left-md gf-elm-left-sm gf-elm-left-xs" data-gemlang="en" data-exc=""><p>We’re happy to announce that Haus of Glo is now a stockist for Wholy Dose! You can now purchase Wholy Dose products via Haus of Glo’s webstore or schedule a curb-side pick.</p></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606244277192" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606244277192"><div class="elm text-edit gf-elm-left gf-elm-left-md gf-elm-left-sm gf-elm-left-xs gf-elm-center-lg" data-gemlang="en" data-exc=""><p><br></p><p><br></p><p><br></p><p><i><a href="https://www.hausofglo.com/blog/haus-guest-gina-holzer" class="" target="_blank">Read the full interview on Haus of Glo, here</a></i></p></div></div><!--gfsplit--></div><div id="divContentBk"></div><!--End_Gem_Page_Main_Editor-->
+        </div>                      {% if blog.comments_enabled? %}          {% if number_of_comments > 0 %}
+            <hr class="hr--large">
+            <h2 class="h3 text-center">{{ 'blogs.comments.with_count' | t: count: number_of_comments }}</h2>
+            <hr class="hr--small hr--clear">
+          {% endif %}          {% paginate article.comments by 20 %}
+            
+            <div id="comments">              {% if comment and comment.created_at %}
+                <p class="note form-success">
+                  {% if blog.moderated? %}
+                    {{ 'blogs.comments.success_moderated' | t }}
+                  {% else %}
+                    {{ 'blogs.comments.success' | t }}
+                  {% endif %}
+                </p>
+              {% endif %}              {% if number_of_comments > 0 %}
+                <ul class="no-bullets">
+                  
+                  {% if comment and comment.created_at %}
+                    <li id="{{ comment.id }}" class="comment first{% if article.comments_count == 0 %} last{% endif %}">
+                      {% include 'comment' %}
+                    </li>
+                  {% endif %}                  
+                  {% for comment in article.comments %}
+                    <li id="{{ comment.id }}" class="comment{% unless number_of_comments > article.comments_count %}{% if forloop.first %} first{% endif %}{% endunless %}{% if forloop.last %} last {% endif %}">
+                      {% include 'comment' %}
+                    </li>                    {% unless forloop.last %}
+                      <li><hr class="hr--clear"></li>
+                    {% endunless %}
+                  {% endfor %}
+                </ul>                {% if paginate.pages > 1 %}
+                  {% include 'pagination' %}
+                {% endif %}              {% endif %}              <hr class="hr--large">              <h2 class="h3 text-center">{{ 'blogs.comments.title' | t }}</h2>
+              <hr class="hr--small hr--clear">              <div class="form-vertical">
+                {% form 'new_comment', article %}                  {{ form.errors | default_errors }}                  <div class="grid grid--small">
+                    <div class="grid__item large--one-half">
+                      <label for="CommentAuthor" class="hidden-label">{{ 'blogs.comments.name' | t }}</label>
+                      <input class="input-full{% if form.errors contains 'author' %} error{% endif %}" type="text" name="comment[author]" placeholder="{{ 'blogs.comments.name' | t }}" id="CommentAuthor" value="{{ form.author }}" autocapitalize="words">
+                    </div>
+                    <div class="grid__item large--one-half">
+                      <label for="CommentEmail" class="hidden-label">{{ 'blogs.comments.email' | t }}</label>
+                      <input class="input-full{% if form.errors contains 'email' %} error{% endif %}" type="email" name="comment[email]" placeholder="{{ 'blogs.comments.email' | t }}" id="CommentEmail" value="{{ form.email }}" autocorrect="off" autocapitalize="off">
+                    </div>
+                  </div>                  <label for="CommentBody" class="hidden-label">{{ 'blogs.comments.message' | t }}</label>
+                  <textarea class="input-full{% if form.errors contains 'body' %} error{% endif %}" name="comment[body]" id="CommentBody" placeholder="{{ 'blogs.comments.message' | t }}">{{ form.body }}</textarea>                  <div class="text-center">
+                    {% if blog.moderated? %}
+                      <p>{{ 'blogs.comments.moderated' | t }}</p>
+                    {% endif %}                    <input type="submit" class="btn" value="{{ 'blogs.comments.post' | t }}">
+                  </div>                {% endform %}
+              </div>            </div>
+          {% endpaginate %}
+        {% endif %}      </div>
+    </div>  </article>
+</div>{% if section.settings.upsellart != blank %}
+<br/><br/>
+<div class="wrapper">
+  <h2 style="text-align: center">{{ section.settings.upselltextart }}</h2>
+  <div class="new-collection-wrap" style="padding-bottom:15px;">
+    <div class="grid-uniform">
+      {% assign grid_item_width = 'small--one-half medium--one-half large--one-quarter' %}
+      {% for product in collections[section.settings.upsellart].products limit: 4 %}
+        {% include 'product-grid-item' %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endif %}<hr class="hr--medium hr--clear">
+<div class="grid__item" style="display:flex">
+ <div class="leftalign">
+  <a href="{{ blog.url }}" class="custblog">&larr; {{ 'blogs.article.back_to_blog' | t: title: blog.title }}</a>
+  </div>
+  <div class="centeralignshare custblog">
+    Share This Article
+  </div></div>
+          {% include 'social-sharing', share_title: article.title, share_permalink: article.url, share_image: article.image %}
+      <style>
+  .centeralignshare
+  {
+   text-align:center;flex:0 1 33% ;
+  }
+  .leftalign
+  {
+  text-align:left; flex:0 1 33%;
+  }
+  .custblog
+  {
+    font-weight: 500!important;
+    font-size: 15px!important;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #1D1D1D;
+  }
+</style>{% section 'featured-products' %}
+<!--GEM_FOOTER-->
+{% capture GEM_FOOTER_SCRIPT %}
+<script data-instant-track type="text/javascript">
+	var pageLibs = [		'{{ 'gem-article-492831539394.js' | asset_url }}',	];
+</script>
+<script data-instant-track type="text/javascript">
+	var GEMVENDOR = GEMVENDOR || (function(){		var _js = {};		return {			init: function(Args) {				_js = Args;			},			getLibs: function() {				return _js;			}		};	}());	GEMVENDOR.init(pageLibs);</script>
+<script data-instant-track type="text/javascript" src="https://d1um8515vdn9kb.cloudfront.net/files/gempagev2.js?v=1.0" class="gf-script" defer></script>
+{% endcapture %}
+<!--GEM_FOOTER_END-->

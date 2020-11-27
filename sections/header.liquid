@@ -16,13 +16,13 @@
   <div class="menu-pullout-btn menu-toggle" >
         <svg class="ham hamRotate ham4" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
           <path
-                class="line top" style="stroke: #000; padding-top:2px;"
+                class="line top" style="stroke: {{ section.settings.mobile_menu_link }}; padding-top:2px;"
                 d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20" />
           <path
-                class="line " style="stroke: #000;"
+                class="line " style="stroke: {{ section.settings.mobile_menu_link }};"
                 d="m 70,50 h -40" />
           <path
-                class="line bottom" style="stroke: #000;"
+                class="line bottom" style="stroke: {{ section.settings.mobile_menu_link }};"
                 d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" />
         </svg>
    </div>
@@ -30,7 +30,7 @@
 
   <div class="ziz-menu">
     {% for link in linklists[section.settings.main_menu_link_list2].links %}
-      <a
+      <a style="color:{{section.settings.mobile_menu_link}}"
         href="{{ link.url }}"
         class="mobile-nav__link"
         {% unless template.name == 'index' %}{% if link.active %}aria-current="page"{% endif %}{% endunless%}>
@@ -38,6 +38,9 @@
       </a>
 
     {% endfor %}
+          {% include 'search-bar', search_btn_style: 'btn', search_bar_location: 'search-bar--page' %}
+
+             
   </div>
 
 </div>
@@ -300,7 +303,7 @@
 
             <li class="desktop-search  site-nav__item site-nav__link site-nav__link--icon wholy-account-icon wholy-search-icon">
               <a href="/search" class="{% if search_modal %} js-toggle-search-modal{% endif %}" data-mfp-src="#SearchModal">
-                <img src="https://cdn.shopify.com/s/files/1/0268/0055/4170/files/Search-Icon.png?v=1603618920">
+                <img src="https://cdn.shopify.com/s/files/1/0273/3670/4087/files/WholyDose-SearchIcon_3x_1593040a-4c4a-4c3c-aaff-1bff229c4010.png?v=1605313655">
                 {% comment %}
                 <span class="icon-fallback-text">
                   <span class="icon icon-search" aria-hidden="true"></span>
@@ -315,20 +318,20 @@
           {% if shop.customer_accounts_enabled %}
   
               <a class="site-nav__link site-nav__link--icon wholy-account-icon" href="/account">
-                <img src="https://cdn.shopify.com/s/files/1/0268/0055/4170/files/Account-Icon.png?v=1603618920">
+                <img src="https://cdn.shopify.com/s/files/1/0273/3670/4087/files/WholyDose_AccountIcon_3x_295fa5d9-dc43-496c-8d67-af2e8ba18fad.png?v=1605313655">
               </a>
           {% endif %}
 
 
 
           <a href="/cart" class="site-nav__link site-nav__link--icon wholy-cart-icon wholy-account-icon desktop-cart site-nav__link--icon cart-link js-drawer-open-button-right" aria-controls="CartDrawer">
-            <img src="https://cdn.shopify.com/s/files/1/0268/0055/4170/files/Shopping-Bag.png?v=1603618920">
+            <img src="https://cdn.shopify.com/s/files/1/0273/3670/4087/files/WholyDose-BagIcon_3x_b6804ce1-e599-4921-826a-cb25157ba30c.png?v=1605313655">
             {% comment %}
             <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon" aria-hidden="true" viewBox="0 0 31.074 20.464">
                 <path d="M29.509 2.31a.97.97 0 00-.964-.9h-17.1a1.034 1.034 0 00.062-.345 1.07 1.07 0 00-1.069-1.069H9.059A1.071 1.071 0 007.99 1.065a1.027 1.027 0 00.027.23c-.613.053-4.993 3.462-6.285 4.805C-.554 8.477-.042 9.464.285 9.779a.868.868 0 00.626.237c.9 0 2.2-1 3.272-2.115a34.31 34.31 0 002.821-3.516c.13-.182.245-.349.354-.508L5.942 19.383a1 1 0 00.254.763.963.963 0 00.709.314h23.2a.963.963 0 00.709-.314 1 1 0 00.255-.763zM3.595 7.334C2.028 8.963 1.022 9.26.861 9.189c-.1-.094-.144-.837 1.469-2.514a42.7 42.7 0 014.777-3.9 35.106 35.106 0 01-3.512 4.559zm3.756 11.758L8.842 2.787h19.333l1.49 16.305z"></path>
               </svg>
             {% endcomment %}
-                  {% comment %}<img src="https://cdn.shopify.com/s/files/1/0268/0055/4170/files/Shopping-Bag.png" style="width: 17px;">
+                  {% comment %}<img src="https://cdn.shopify.com/s/files/1/0273/3670/4087/files/WholyDose-BagIcon_3x_b6804ce1-e599-4921-826a-cb25157ba30c.png?v=1605313655" style="width: 17px;">
                   <span class="cart-link__bubble{% if cart.item_count > 0 %} cart-link__bubble--visible{% endif %}"></span>{% endcomment %}
                   <span class="counter">{{ cart.item_count }}</span>
           </a>
@@ -574,8 +577,9 @@
             <div class="grid__item large--hide one-quarter">
               <div class="site-nav--mobile text-right">
                 <a href="/cart" class=" cart-link js-drawer-open-button-right" aria-controls="CartDrawer">
-                  <img src="https://cdn.shopify.com/s/files/1/0268/0055/4170/files/Shopping-Bag.png" style="width: 26px;">
-                  <span class="cart-link__bubble{% if cart.item_count > 0 %} cart-link__bubble--visible{% endif %}"></span>
+                  <img src="https://cdn.shopify.com/s/files/1/0273/3670/4087/files/WholyDose-BagIcon_3x_b6804ce1-e599-4921-826a-cb25157ba30c.png?v=1605313655" style="width: 26px;">
+<!--                   <span class="cart-link__bubble{% if cart.item_count > 0 %} cart-link__bubble--visible{% endif %}"></span> -->
+                  <span class="counter counter-small">{{ cart.item_count }}</span>
                 </a>
               </div>
             </div>
@@ -781,6 +785,11 @@
       },
       "default": "footer"
     },
+{
+	  "type": "color",
+      "id": "mobile_menu_link",
+      "label": "Mobile menu link color"
+},
     {
       "type": "checkbox",
       "id": "drawer_search_enable",
@@ -881,7 +890,7 @@
         "ja": "バー",
         "pt-BR": "Barra"
       },
-      "default": "#1c1d1d"
+      "default": "#1d1d1d"
     },
     {
       "type": "color",

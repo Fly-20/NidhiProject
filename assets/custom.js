@@ -60,17 +60,6 @@ $(document).ready(function() {
   });
 
   // 1st carousel, main
-//   $('.results-slider').flickity({
-//     wrapAround: true,
-//     pageDots: false,
-//     cellAlign: 'left',
-//     arrowShape: { 
-//       x0: 10,
-//       x1: 60, y1: 50,
-//       x2: 65, y2: 45,
-//       x3: 20
-//     }
-//   });
   $('.results-slider').slick({
     infinite: true,
     slidesToShow: 1,
@@ -92,39 +81,41 @@ $(document).ready(function() {
   });
   
   // 1st carousel, main
-//   $('.results-page-slider').flickity({
-//         autoPlay: true,
-//         wrapAround: true,
-//         pageDots: false,
-//          arrowShape: { 
-//       x0: 30,
-//       x1: 60, y1: 50,
-//       x2: 65, y2: 50,
-//       x3: 35
-//     }
-//   });
   $('.results-page-slider').slick({
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    //autoplay: true,
-    //autoplaySpeed: 3000,
+    autoplay:true,
+    autoplaySpeed: 4000,
     dots: false,
     arrows: true,
     adaptiveHeight: true
   });
 
   // 1st carousel, main
-  $('.blog-slider').flickity({
-    wrapAround: true,
-    pageDots: false,
-    arrowShape: { 
-      x0: 10,
-      x1: 60, y1: 50,
-      x2: 65, y2: 45,
-      x3: 20
-    }
+$('.blog-slider').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+					
+						
+    dots: false,
+    arrows: true,
+    adaptiveHeight: true
   });
+  
+    // 1st carousel, main
+  $('.results-page-slider').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 3000,
+    dots: false,
+    arrows: true,
+    adaptiveHeight: true
+  });
+
 
   $('.main-nav-shop').hover(function() {
     $('.ziz-dropdown-2020.shopall-dropdown').addClass('active');
@@ -265,13 +256,23 @@ $(window).on('load', function() {
 
 $(document).ready(function() {
   
-  $('.main-slider').flickity({
-    wrapAround: true,
-    pageDots: false,
-    prevNextButtons: true,
-    cellAlign: 'left',
-    autoPlay: true,
-    autoPlay: 3000
+  //   $('.main-slider').flickity({
+//     wrapAround: true,
+//     pageDots: false,
+//     prevNextButtons: true,
+//     cellAlign: 'left',
+//     autoPlay: true,
+//     autoPlay: 3000
+//   });
+  $('.main-slider').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 3000,
+    dots: false,
+    arrows: true,
+    adaptiveHeight: true
   });
   
   

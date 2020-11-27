@@ -1,7 +1,9 @@
 {% for block in section.blocks %}
 	{% if page.handle == block.settings.page %}
     <div class="page-banner page-banner-{{ page.handle }}">
-      <img src="{{ block.settings.image | img_url: '2000x' }}">
+      
+      <img class="new-banner-desktop" src="{{ block.settings.desk_image | img_url: 'master', scale: 2 }}">
+       <img class="new-banner-mobile" src="{{ block.settings.mob_image | img_url: 'master', scale: 2 }}">
       <div class="page-banner-copy">
       <h1>{{ block.settings.btitle }}</h1>
       <p class="subheaders-custom">{{ block.settings.bsub}}</p>
@@ -20,9 +22,14 @@
       "name": "Featured Image",
       "settings": [
         {
-          "id": "image",
+          "id": "desk_image",
           "type": "image_picker",
-       		"label": "Page Featured Image"
+       		"label": "Desktop Featured Image"
+        },
+		{
+          "id": "mob_image",
+          "type": "image_picker",
+       		"label": "Mobile Featured Image"
         },
         {
           "id": "page",

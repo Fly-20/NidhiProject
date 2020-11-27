@@ -1,0 +1,252 @@
+
+.new-page {
+  max-width: 95% !important;
+}
+.new-page > .page-wysywig {
+  width: 93.6%;
+  margin: auto;
+}
+.new-page .page-title {
+  padding-bottom: 0px;
+}
+.page--contact .contact-body {
+  margin-bottom: 0px;
+  text-align: center;
+  max-width: 700px;
+}
+h1, h2, h3, h4, h5, h6 {
+    line-height: normal;
+    letter-spacing: normal;
+  	text-transform: unset;
+}
+.section-header h1
+{
+  font-weight: 600;
+  text-transform:capitalize;
+  font-size:30px;
+}
+.rte--indented-images h1,h2,h3
+{
+  font-weight: 600;
+}
+
+.bold-500, .page-title, .featured-blog-col h2 {
+  font-weight: 500;
+}
+.page--contact .form-vertical {
+  border: none;
+  padding-bottom: 50px;
+}
+.no-margin {
+  margin: 0px !important;
+}
+.article-img-container .article__featured-image {
+  position: unset;
+  margin-top: 30px;
+}
+hr.full {
+  width: 100%;
+}
+hr.light-grey {
+  border-color: #EEEEEE;
+}
+.custom-blog-tags a
+{
+  padding:0;
+}
+.read-more
+{
+  margin-top:0;
+}
+.custom-blog-post p{
+color:#1D1D1D;
+}
+.featured-blog-col p{
+color:#1D1D1D;
+}
+.lbl-text
+{
+  font-size:14px;
+}
+.image-cap-des
+{
+  font-size:14px;
+}
+.date
+{
+  font-style:italic;
+}
+.page-banner-results .page-banner-copy-re
+{
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    width: 40%;
+    padding: 0 30px;
+    text-align: left;
+    z-index: 3;
+    transform: translateY(-50%);
+}
+@media screen and (max-width: 767px)
+.page-banner-results .page-banner-copy-re {
+    left: 0;
+    width: 100%;
+    max-width: 440px;
+}
+.subheaders-customs
+{
+  font-weight:500;
+}
+.page-banner-copy-re h1
+{
+  font-weight:600;
+}
+.page--contact input[type="text"], input[type="email"],input[type="tel"], .page--contact textarea {
+  font-size: 14px;
+  text-decoration: none;
+  font-style: italic;
+  background: transparent;
+  border: 0.5px solid #C0C0C0;
+}
+.faq-content-wrap .faq-box h2 {
+  font-weight: 500; 
+  font-size: 16px; 
+  line-height: 25px; 
+  letter-spacing: 0.03em; 
+  color: #1D1D1D;
+  margin: 0px;
+}
+.faq-content-wrap .faq-box p {
+  font-size: 15px; 
+  line-height: 25px;
+  letter-spacing: 0.02em;
+  color: #1D1D1D;
+}
+.faq-content-wrap .faq-box .content {
+  padding: 0px;
+}
+.page_title{
+  font-weight:500;
+  font-size: 30px;
+  line-height: 37px;
+  letter-spacing: 0.08em;
+  color: #000000;
+}
+.still span {
+    color: #1D1D1D;
+ 	 font-weight: 500;
+	font-size: 18px;
+	line-height: 30px;
+	text-align: center;
+	letter-spacing: 0.03em;
+}
+.still a {
+    border-bottom: 1px solid #1D1D1D;
+  	color: #1D1D1D;
+ 	font-weight: 500;
+	font-size: 18px;
+	line-height: 30px;
+	text-align: center;
+	letter-spacing: 0.03em;
+}
+.career_bl_size
+{
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+}
+.career_pr_size
+{
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.03em;
+  color: #1C1D1D;
+}
+.faq-blocks {
+  padding: 0px;
+}
+.blog_cnt_p {
+  font-weight: 500;
+  letter-spacing: 0.02em
+}
+.read-more {
+  opacity: 1;
+  font-size:15px;
+}
+.underline {
+  text-decoration: underline;
+}
+.custom-blog-tags a {
+  opacity: 1;
+}
+.custom-blog-tags a:hover {
+  color: black;
+}
+.custom-blog-title {
+  line-height: 1.3em;
+}
+.grid-product__meta {
+  margin-top: 25px;
+}
+/* .feature-row__item {
+  flex: 10 11;
+}  */
+.feature-row .feature-row__text--left
+{
+  padding:5% 0 10% %;
+}
+.testimonials p
+{
+  font-size:15px;
+}
+@media (min-width: 768px){
+  .padding-left-50-lg {
+    padding-left: 50px !important;
+  }
+  .homepage-products .new-collection-wrap > .grid-uniform {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 768px){
+  .new-page, .new-page > .page-wysywig {
+    max-width: 100%;
+    width: 100%;
+  }
+  .faq-content-wrap .faq-box {
+    padding-top: 0px;
+  }
+  .padding-15-xs {
+    padding: 15px;
+  }
+  .page--contact .contact-bottom-container .contact-options {
+    display: block;
+    text-align: center;
+  }
+  .page--contact .contact-bottom-container .contact-options p:after {
+    content: none;
+  }
+  .contentcol
+  {
+    margin-top:0px;
+    margin-left:0px;
+    width:100%;
+  }
+  .contentcol .read-more
+  {
+    margin-top:0px!important;
+    text-align:center'
+  }
+  .contentcol h2
+  {
+    margin-bottom:0px;
+    font-size:18px;
+    text-align: center; 
+  }
+  .featured-blog-col p
+  {
+    text-align: center; 
+  }
+  
+}
+

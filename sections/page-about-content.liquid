@@ -15,33 +15,33 @@
 <div class="page-blocks">
   <h1 class="subheaders-custom-3">{{ section.settings.content1title }}</h1>
   <div class="wrapper cf">
-    <div class="page-block visible-xs">
+    <div class="page-block page-block1 visible-xs">
       <img src="{{ section.settings.block1 | img_url: '2000x' }}">
     </div>
     <div class="page-block">
-      <div class="content">
+      <div class="content leftcontent">
         {{ section.settings.content1 }}
       </div>
     </div>
-    <div class="page-block hidden-xs">
+    <div class="page-block page-block1 hidden-xs">
       <img src="{{ section.settings.block1 | img_url: '2000x' }}">
     </div>
   </div>
 </div>
 
-<div class="page-blocks">
+<div class="page-blocks page-block2">
   <h1 class="subheaders-custom-3">{{ section.settings.content2title }}</h1>
   <div class="wrapper cf">
-    <div class="page-block">
+    <div class="page-block page-block1">
       <img src="{{ section.settings.block2 | img_url: '2000x' }}">
     </div>
     <div class="page-block">
-      <div class="content">
+      <div class="content rightcontent">
         {{ section.settings.content2 }}
       </div>
     </div>
 
-    <div class="content-text">
+    <div class="content-text" style="text-align:left;float:left">
       {{ section.settings.content3 }}
     </div>
   </div>

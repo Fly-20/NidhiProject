@@ -1,0 +1,152 @@
+{% comment %}
+	GEMPAGE BUILDER (https://apps.shopify.com/gempage)
+
+	You SHOULD NOT modify source code in this page because
+	It is automatically generated from GEMPAGE BUILDER
+	Try to edit page with the live editor.
+{% endcomment %}
+<!--GEM_HEADER-->
+<link data-instant-track rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" class="gf-style" />
+<link data-instant-track rel="stylesheet" type="text/css" href="https://d1um8515vdn9kb.cloudfront.net/files/vendor.css?refresh=1" class="gf-style" />
+<link data-instant-track rel="stylesheet" type="text/css" href="{{ 'gem-article-384133267543.css' | asset_url }}" class="gf_page_style">
+<!--GEM_HEADER_END-->
+<!-- /templates/article.liquid --><!-- /templates/article.liquid -->
+{% assign number_of_comments = article.comments_count %}{% if comment and comment.created_at %}
+  {% assign number_of_comments = article.comments_count | plus: 1 %}
+{% endif %}<div class="grid padding-15-xs">
+  <article class="grid__item large--five-sixths push--large--one-twelfth article" itemscope itemtype="http://schema.org/Article">    <div class="grid">
+      <div class="grid__item large--four-fifths push--large--one-tenth">
+        <div class="article-img-container">
+          {% assign img_url = article.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
+          <img class="article__featured-image lazyload"
+               src="{{ article.image | img_url: '300x300' }}"
+               data-src="{{ img_url }}"
+               data-widths="[310, 360, 480, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+               data-aspectratio="{{ article.image.aspect_ratio }}"
+               data-sizes="auto"
+               alt="{{ article.title | escape }}">
+        </div>
+    <header class="section-header">
+      <h1>{{ article.title }}</h1>
+      <!--<hr class="hr--small">-->
+       <div class="article_tag" style="display: flex;">
+      <p>
+        <span class="date no-margin"><time datetime="{{ article.published_at | date: '%Y-%m-%d' }}">{{ article.published_at | date: format: 'month_day_year' }}</time></span>
+      &#8231;
+         </p>
+      <ul class="tags tags--article inline-list">
+          {% include 'tags-article' %}
+        </ul>
+      </div>
+    </header>
+      </div>
+    </div>
+    <hr class="full light-grey">
+    <div class="grid">
+      <div class="trial">
+        
+        <div class="rte--indented-images" itemprop="articleBody">
+          <!--Gem_Page_Main_Editor--><div class="clearfix"></div><div class="gryffeditor"><div data-label="Image" data-key="image" id="e-1606199136456" class="element-wrap" data-icon="gpicon-image" data-ver="1.0" data-id="1606199136456" data-resolution="3000x3000"><div class="elm gf-elm-center gf_elm-left-xs gf-elm-center-lg gf-elm-center-md gf-elm-center-sm gf-elm-center-xs" data-exc=""><img src="https://ucarecdn.com/bf7a0589-884d-4bae-aa9d-8e9c87214ea6/-/format/auto/-/preview/3000x3000/-/quality/lighter/" alt="" class="gf_image" data-gemlang="en" data-width="auto" data-height="auto" title="" natural-width="2142" natural-height="1579"></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606199255029" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606199255029"><div class="elm text-edit gf-elm-left gf-elm-left-lg gf-elm-left-md gf-elm-left-sm gf-elm-left-xs" data-gemlang="en" data-exc=""><p><br></p><p>There’s no doubt a good matcha latte takes preparation, but these 5 easy methods will give you options for how to prepare a delicious cup of matcha.</p><p><br></p></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606199220023" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606199220023"><div class="elm text-edit gf-elm-left" data-gemlang="en"><p><font face="Montserrat"><span style="font-size: 35px; letter-spacing: 0.75px;"><b>Learn How to Make a Matcha Latte, With:</b></span></font></p></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606199155427" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606199155427"><div class="elm text-edit gf-elm-left gf-elm-left-lg gf-elm-left-md gf-elm-left-sm gf-elm-left-xs" data-gemlang="en" data-exc=""><p><br></p><p>1. Spoon</p><p>2. Whisk</p><p>3. Frother</p><p>4. Blender</p><p>5. Bottle</p><p><br></p></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606199341901" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606199341901"><div class="elm text-edit gf-elm-left" data-gemlang="en"><p><b style="color: inherit; text-align: inherit; font-size: 35px; letter-spacing: 0.75px; font-family: Montserrat;">How to Make a Matcha Latte With a Spoon</b><br></p></div></div><!--gfsplit--><div data-label="Row" class="gf_row" id="r-1606199410844" data-icon="gpicon-row" data-id="1606199410844"><div class="gf_column gf_col-lg-6 gf_col-md-6 gf_col-sm-6 gf_col-xs-12" id="c-1606199410727" data-id="1606199410727"><div data-label="Image" data-key="image" id="e-1606199423319" class="element-wrap" data-icon="gpicon-image" data-ver="1.0" data-id="1606199423319" data-resolution="480x480"><div class="elm gf-elm-center gf_elm-left-xs gf-elm-center-lg gf-elm-center-md gf-elm-center-sm gf-elm-center-xs" data-exc=""><img src="https://ucarecdn.com/762d9d95-ea9a-4dc0-b0ae-e77a47639570/-/format/auto/-/preview/480x480/-/quality/lighter/" alt="" class="gf_image rte__no-indent" data-gemlang="en" data-width="auto" data-height="auto" title="" natural-width="318" natural-height="480"></div></div></div><div class="gf_column gf_col-lg-6 gf_col-md-6 gf_col-sm-6 gf_col-xs-12" id="c-1606199410799" data-id="1606199410799"><div data-label="Text Block" data-key="text-block" id="e-1606199419967" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606199419967"><div class="elm text-edit gf-elm-left" data-gemlang="en"><p>1. Add a packet or scoop of Wholy Dose MATCHA Beauty Superfood Powder to a mug</p><p>2. Add 1/4 cup of warm water</p><p>3. Using a spoon, stir well until completely dissolved (clumping is natural, if it occurs, stir in a “W” motion)</p><p>4. Pour in 1 cup of warm milk, gently stir</p><p>5. Stir in sweetener of choice (optional)</p><p>6. Enjoy</p></div></div></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606199647729" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606199647729"><div class="elm text-edit gf-elm-left" data-gemlang="en"><p><font face="Montserrat"><span style="font-size: 35px; letter-spacing: 0.75px;"><b><br></b></span></font></p><p><font face="Montserrat"><span style="font-size: 35px; letter-spacing: 0.75px;"><b>How to Make a Matcha Latte With a Matcha Whisk</b></span></font></p></div></div><!--gfsplit--><div data-label="Row" class="gf_row" id="r-1606199677103" data-icon="gpicon-row" data-id="1606199677103"><div class="gf_column gf_col-lg-6 gf_col-md-6 gf_col-sm-6 gf_col-xs-12" id="c-1606199410727" data-id="1606199410727"><div data-label="Image" data-key="image" id="e-1606199677079" class="element-wrap" data-icon="gpicon-image" data-ver="1.0" data-id="1606199677079" data-resolution="480x480"><div class="elm gf-elm-center gf_elm-left-xs gf-elm-center-lg gf-elm-center-md gf-elm-center-sm gf-elm-center-xs" data-exc=""><img src="https://ucarecdn.com/0e0ae7e7-0bc3-49a7-abe8-502a1d69b775/-/format/auto/-/preview/480x480/-/quality/lighter/" alt="" class="gf_image rte__no-indent" data-gemlang="en" data-width="auto" data-height="auto" title="" natural-width="384" natural-height="480"></div></div></div><div class="gf_column gf_col-lg-6 gf_col-md-6 gf_col-sm-6 gf_col-xs-12" id="c-1606199410799" data-id="1606199410799"><div data-label="Text Block" data-key="text-block" id="e-1606199677014" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606199677014"><div class="elm text-edit gf-elm-left" data-gemlang="en"><p>1. Add a packet or scoop of Wholy Dose MATCHA Beauty Superfood Powder to a mug</p><p>2. Add 1/4 cup of warm water</p><p>3. Using a whisk, stir in a “W” motion until completely dissolved</p><p>4. Pour in 1 cup of warm milk, gently stir</p><p>5. Stir in sweetener of choice (optional)</p><p>6. Enjoy</p></div></div></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606248711352" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606248711352"><div class="elm text-edit gf-elm-left" data-gemlang="en"><p><font face="Montserrat"><span style="font-size: 35px; letter-spacing: 0.75px;"><b><br></b></span></font></p><p><font face="Montserrat"><span style="font-size: 35px; letter-spacing: 0.75px;"><b>How to Make a Matcha Latte With a Frother</b></span></font></p></div></div><!--gfsplit--><div data-label="Row" class="gf_row" id="r-1606248775446" data-icon="gpicon-row" data-id="1606248775446"><div class="gf_column gf_col-lg-6 gf_col-md-6 gf_col-sm-6 gf_col-xs-12" id="c-1606199410727" data-id="1606199410727"><div data-label="Image" data-key="image" id="e-1606248775420" class="element-wrap" data-icon="gpicon-image" data-ver="1.0" data-id="1606248775420" data-resolution="480x480"><div class="elm gf-elm-center gf_elm-left-xs gf-elm-center-md gf-elm-center-sm gf-elm-center-xs gf-elm-center-lg" data-exc=""><img src="https://ucarecdn.com/44d18c44-9176-4271-b37b-c2bdb21cb3b1/-/format/auto/-/preview/480x480/-/quality/lighter/" alt="" class="gf_image rte__no-indent" data-gemlang="en" data-width="auto" data-height="auto" title="" natural-width="384" natural-height="480"></div></div></div><div class="gf_column gf_col-lg-6 gf_col-md-6 gf_col-sm-6 gf_col-xs-12" id="c-1606199410799" data-id="1606199410799"><div data-label="Text Block" data-key="text-block" id="e-1606248775388" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606248775388"><div class="elm text-edit gf-elm-left" data-gemlang="en"><p>1. Add a packet or scoop of Wholy Dose MATCHA Beauty Superfood Powder to a mug</p><p>2. Add 1 cup of warm milk</p><p>3. Using a frother, froth until completely dissolved</p><p>4. Stir in sweetener of choice (optional)</p><p>5. Enjoy</p><p><br></p><p>* You can also froth Wholy Dose MATCHA Beauty Superpowder with 1/4 cup of warm water first, then add milk and gently stir</p></div></div></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606249020200" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606249020200"><div class="elm text-edit gf-elm-left" data-gemlang="en"><p><font face="Montserrat"><span style="font-size: 35px; letter-spacing: 0.75px;"><b><br></b></span></font></p><p><font face="Montserrat"><span style="font-size: 35px; letter-spacing: 0.75px;"><b>How to Make a Matcha Latte With a Blender</b></span></font></p></div></div><!--gfsplit--><div data-label="Row" class="gf_row" id="r-1606249048893" data-icon="gpicon-row" data-id="1606249048893"><div class="gf_column gf_col-lg-6 gf_col-md-6 gf_col-sm-6 gf_col-xs-12" id="c-1606199410727" data-id="1606199410727"><div data-label="Image" data-key="image" id="e-1606249048844" class="element-wrap" data-icon="gpicon-image" data-ver="1.0" data-id="1606249048844" data-resolution="480x480"><div class="elm gf-elm-center gf_elm-left-xs gf-elm-center-md gf-elm-center-sm gf-elm-center-xs gf-elm-center-lg" data-exc=""><img src="https://ucarecdn.com/76dfdc9e-62c9-4bf4-9aaf-4a5eb3790186/-/format/auto/-/preview/480x480/-/quality/lighter/" alt="" class="gf_image rte__no-indent" data-gemlang="en" data-width="auto" data-height="auto" title="" natural-width="384" natural-height="480"></div></div></div><div class="gf_column gf_col-lg-6 gf_col-md-6 gf_col-sm-6 gf_col-xs-12" id="c-1606199410799" data-id="1606199410799"><div data-label="Text Block" data-key="text-block" id="e-1606249048843" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606249048843"><div class="elm text-edit gf-elm-left" data-gemlang="en"><p>1. Add a packet or scoop of Wholy Dose MATCHA Beauty Superfood Powder to a blender</p><p>2. Add 1 cup of warm milk</p><p>3. Add sweetener of choice (optional)</p><p>4. Blend on high, until smooth</p><p>5. Enjoy</p></div></div></div></div><!--gfsplit--><div data-label="Text Block" data-key="text-block" id="e-1606249093410" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606249093410"><div class="elm text-edit gf-elm-left" data-gemlang="en"><p><font face="Montserrat"><span style="font-size: 35px; letter-spacing: 0.75px;"><b><br></b></span></font></p><p><font face="Montserrat"><span style="font-size: 35px; letter-spacing: 0.75px;"><b>How to Make a Matcha Latte With a Bottle</b></span></font></p></div></div><!--gfsplit--><div data-label="Row" class="gf_row" id="r-1606249117362" data-icon="gpicon-row" data-id="1606249117362"><div class="gf_column gf_col-lg-6 gf_col-md-6 gf_col-sm-6 gf_col-xs-12" id="c-1606199410727" data-id="1606199410727"><div data-label="Image" data-key="image" id="e-1606249117276" class="element-wrap" data-icon="gpicon-image" data-ver="1.0" data-id="1606249117276" data-resolution="480x480"><div class="elm gf-elm-center gf_elm-left-xs gf-elm-center-md gf-elm-center-sm gf-elm-center-xs gf-elm-center-lg" data-exc=""><img src="https://ucarecdn.com/55b06423-a54f-4635-a02a-5690a65f197f/-/format/auto/-/preview/480x480/-/quality/lighter/" alt="" class="gf_image rte__no-indent" data-gemlang="en" data-width="auto" data-height="auto" title="" natural-width="384" natural-height="480"></div></div></div><div class="gf_column gf_col-lg-6 gf_col-md-6 gf_col-sm-6 gf_col-xs-12" id="c-1606199410799" data-id="1606199410799"><div data-label="Text Block" data-key="text-block" id="e-1606249117391" class="element-wrap" data-icon="gpicon-textblock" data-ver="1" data-id="1606249117391"><div class="elm text-edit gf-elm-left" data-gemlang="en"><p>1. Add a packet or scoop of Wholy Dose MATCHA Beauty Superfood Powder to a sealable bottle</p><p>2. Add 1 cup of warm milk</p><p>3. Add sweetener of choice (optional)</p><p>4. Enclose the cap and shake until completely dissolved</p><p>5. Enjoy</p><p><br></p><p>* You can also add 1/4 cup of warm water and Wholy Dose MATCHA Beauty Superpowder to a bottle, shake until dissolved, then add warm milk</p></div></div></div></div><!--gfsplit--></div><div id="divContentBk"></div><!--End_Gem_Page_Main_Editor-->
+        </div>                      {% if blog.comments_enabled? %}          {% if number_of_comments > 0 %}
+            <hr class="hr--large">
+            <h2 class="h3 text-center">{{ 'blogs.comments.with_count' | t: count: number_of_comments }}</h2>
+            <hr class="hr--small hr--clear">
+          {% endif %}          {% paginate article.comments by 20 %}
+            
+            <div id="comments">              {% if comment and comment.created_at %}
+                <p class="note form-success">
+                  {% if blog.moderated? %}
+                    {{ 'blogs.comments.success_moderated' | t }}
+                  {% else %}
+                    {{ 'blogs.comments.success' | t }}
+                  {% endif %}
+                </p>
+              {% endif %}              {% if number_of_comments > 0 %}
+                <ul class="no-bullets">
+                  
+                  {% if comment and comment.created_at %}
+                    <li id="{{ comment.id }}" class="comment first{% if article.comments_count == 0 %} last{% endif %}">
+                      {% include 'comment' %}
+                    </li>
+                  {% endif %}                  
+                  {% for comment in article.comments %}
+                    <li id="{{ comment.id }}" class="comment{% unless number_of_comments > article.comments_count %}{% if forloop.first %} first{% endif %}{% endunless %}{% if forloop.last %} last {% endif %}">
+                      {% include 'comment' %}
+                    </li>                    {% unless forloop.last %}
+                      <li><hr class="hr--clear"></li>
+                    {% endunless %}
+                  {% endfor %}
+                </ul>                {% if paginate.pages > 1 %}
+                  {% include 'pagination' %}
+                {% endif %}              {% endif %}              <hr class="hr--large">              <h2 class="h3 text-center">{{ 'blogs.comments.title' | t }}</h2>
+              <hr class="hr--small hr--clear">              <div class="form-vertical">
+                {% form 'new_comment', article %}                  {{ form.errors | default_errors }}                  <div class="grid grid--small">
+                    <div class="grid__item large--one-half">
+                      <label for="CommentAuthor" class="hidden-label">{{ 'blogs.comments.name' | t }}</label>
+                      <input class="input-full{% if form.errors contains 'author' %} error{% endif %}" type="text" name="comment[author]" placeholder="{{ 'blogs.comments.name' | t }}" id="CommentAuthor" value="{{ form.author }}" autocapitalize="words">
+                    </div>
+                    <div class="grid__item large--one-half">
+                      <label for="CommentEmail" class="hidden-label">{{ 'blogs.comments.email' | t }}</label>
+                      <input class="input-full{% if form.errors contains 'email' %} error{% endif %}" type="email" name="comment[email]" placeholder="{{ 'blogs.comments.email' | t }}" id="CommentEmail" value="{{ form.email }}" autocorrect="off" autocapitalize="off">
+                    </div>
+                  </div>                  <label for="CommentBody" class="hidden-label">{{ 'blogs.comments.message' | t }}</label>
+                  <textarea class="input-full{% if form.errors contains 'body' %} error{% endif %}" name="comment[body]" id="CommentBody" placeholder="{{ 'blogs.comments.message' | t }}">{{ form.body }}</textarea>                  <div class="text-center">
+                    {% if blog.moderated? %}
+                      <p>{{ 'blogs.comments.moderated' | t }}</p>
+                    {% endif %}                    <input type="submit" class="btn" value="{{ 'blogs.comments.post' | t }}">
+                  </div>                {% endform %}
+              </div>            </div>
+          {% endpaginate %}
+        {% endif %}      </div>
+    </div>  </article>
+</div>{% if section.settings.upsellart != blank %}
+<br/><br/>
+<div class="wrapper">
+  <h2 style="text-align: center">{{ section.settings.upselltextart }}</h2>
+  <div class="new-collection-wrap" style="padding-bottom:15px;">
+    <div class="grid-uniform">
+      {% assign grid_item_width = 'small--one-half medium--one-half large--one-quarter' %}
+      {% for product in collections[section.settings.upsellart].products limit: 4 %}
+        {% include 'product-grid-item' %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endif %}<hr class="hr--medium hr--clear">
+<div class="grid__item" style="display:flex">
+ <div class="leftalign">
+  <a href="{{ blog.url }}" class="custblog">&larr; {{ 'blogs.article.back_to_blog' | t: title: blog.title }}</a>
+  </div>
+  <div class="centeralignshare custblog">
+    Share This Article
+  </div></div>
+          {% include 'social-sharing', share_title: article.title, share_permalink: article.url, share_image: article.image %}
+     <style>
+  .centeralignshare
+  {
+   text-align:center;flex:0 1 33% ;
+  }
+  .leftalign
+  {
+  text-align:left; flex:0 1 33%;
+  }
+  .custblog
+  {
+    font-weight: 500!important;
+    font-size: 15px!important;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #1D1D1D;
+  }
+</style>{% section 'featured-products' %}
+<!--GEM_FOOTER-->
+{% capture GEM_FOOTER_SCRIPT %}
+<script data-instant-track type="text/javascript">
+	var pageLibs = [		'{{ 'gem-article-384133267543.js' | asset_url }}',	];
+</script>
+<script data-instant-track type="text/javascript">
+	var GEMVENDOR = GEMVENDOR || (function(){		var _js = {};		return {			init: function(Args) {				_js = Args;			},			getLibs: function() {				return _js;			}		};	}());	GEMVENDOR.init(pageLibs);</script>
+<script data-instant-track type="text/javascript" src="https://d1um8515vdn9kb.cloudfront.net/files/gempagev2.js?v=1.0" class="gf-script" defer></script>
+{% endcapture %}
+<!--GEM_FOOTER_END-->

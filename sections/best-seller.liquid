@@ -1,0 +1,42 @@
+{% if section.settings.upsellres != blank %}
+<br/><br/>
+<div class="wrapper">
+  <h2 style="text-align: center">{{ section.settings.upselltextres }}</h2>
+  <div class="new-collection-wrap" style="padding-bottom:15px;">
+    <div class="grid-uniform">
+      {% if collections[section.settings.upsellres].products.size == 3 %}
+      {% assign grid_item_width = 'small--one-half medium--one-quarter-custom large--one-third' %}
+      {% else %}
+      {% assign grid_item_width = 'small--one-half medium--one-half large--one-quarter' %}
+      {% endif %}
+
+      {% for product in collections[section.settings.upsellres].products limit: 4 %}
+      {% include 'product-grid-item' %}
+      {% endfor %}
+<style>
+ 
+      </style>
+
+
+    </div>
+  </div>
+</div>
+{% endif %}
+
+{% schema %}
+{
+"name": "Best seller",
+"settings": [
+{
+"id": "upselltextres",
+"type": "html",
+"label": "Text for upsell"
+},
+{
+"id": "upsellres",
+"type": "collection",
+"label": "Choose an upsell Collection"
+}
+]
+}
+{% endschema %}

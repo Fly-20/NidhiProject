@@ -1,0 +1,66 @@
+<div class="new-page marginBottom">
+  <h1 class="page-title">{{ page.title }}</h1>
+  <hr class="full light-grey">
+  <div class="page-wysywig cans">{{ page.content }}</div>
+</div>
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+</script>
+
+<style>
+  
+  .marginBottom
+  {
+    margin-bottom:200px;
+  }
+  
+  .accordion {
+    color: #444;
+    cursor: pointer;
+    padding-left: 10px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    font-size: 22px;
+    margin-bottom: 30px;
+    letter-spacing: 0.08em;
+    transition: 0.4s;
+    box-sizing: border-box;
+	font-weight: 600;
+  }
+
+  .active, .accordion:hover {
+
+  }
+  .active:after {
+    content: "\2212"!important;
+  }
+  .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+    text-align:left;
+  }
+  .accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+
+</style>

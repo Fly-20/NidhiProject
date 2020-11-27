@@ -1,0 +1,75 @@
+{% for block in section.blocks %}
+	{% if page.handle == block.settings.page %}
+    <div class="page-banner page-banner-{{ page.handle }}">
+      <img src="{{ block.settings.results_image | img_url: '2000x' }}">
+      <div class="page-banner-copy-re">
+      <h1>{{ block.settings.results_btitle }}</h1>
+      <p class="subheaders-customs">{{ block.settings.results_bsub}}</p>
+        {% if block.settings.cta_url != blank %}
+                      <a class="btn" href="{{ block.settings.cta_url }}" target="_blank" >
+                        {{ block.settings.cta_text }}
+                      </a>
+        {% endif %}
+      </div>
+    </div>
+	{% endif %}
+{% endfor %}
+
+{% schema %}
+{
+  "name": "Page banner Images",
+	"max_blocks": 1,
+  "blocks": [
+    {
+      "type": "select",
+      "name": "Banner Image",
+      "settings": [
+        {
+          "id": "results_image",
+          "type": "image_picker",
+       		"label": "Page Banner Image"
+        },
+        {
+          "id": "page",
+          "type": "page",
+       		"label": "Select Page for Image"
+        },
+        {
+          "id": "results_btitle",
+          "type": "text",
+          "label": "Banner title"
+        },
+        {
+          "id": "results_bsub",
+          "type": "text",
+          "label": "Banner subtitle"
+        },
+		{
+			"id": "cta_url",
+			"type": "url",
+            "label": "Button link"
+		},
+		{
+			"id": "cta_text",
+            "type": "text",
+            "label": "Button text"
+		}
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Page banner Images",
+      "category": "images",
+      "blocks": [
+        { 
+          "type": "select"
+        },
+        {
+          "type": "select"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
