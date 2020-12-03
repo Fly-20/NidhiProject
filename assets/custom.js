@@ -268,10 +268,10 @@ $(document).ready(function() {
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 3000,
-    dots: false,
-    arrows: true,
+    autoplay: true,
+    autoplaySpeed: 8000,
+    dots: true,
+    arrows: false,
     adaptiveHeight: true
   });
   

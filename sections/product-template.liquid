@@ -410,11 +410,12 @@
             <div class="fixed-scroll-add">
 
               <div class="fixed-scroll-title">
+                
                 <img 
 
                      class="product-single__photo lazyload {{ img_id_class }}"
                      src="{{ featured_image | img_url: '300x300' }}"
-                     data-src="{{ img_url }}"
+                    
                      data-widths="[180, 360, 590, 720, 900, 1080, 1296, 1512, 1728, 2048]"
                      data-aspectratio="{{ featured_image.aspect_ratio }}"
                      data-sizes="auto"
@@ -431,7 +432,7 @@
                 <h1>{{ product.title }}</h1>
               </div>
               <div class="fixed-add-btn">
-                <button type="submit" name="add" id="AddToCart--{{ section.id }}" class="btn btn--add-to-cart{% if section.settings.enable_payment_button %} btn--secondary-accent{% endif %}"{% unless current_variant.available %} disabled="disabled"{% endunless %}>
+                <button type="submit" name="add" id="AddToCart1--{{ section.id }}" class="btn btn--add-to-cart{% if section.settings.enable_payment_button %} btn--secondary-accent{% endif %}"{% unless current_variant.available %} disabled="disabled"{% endunless %}>
                   <span class="btn__text">
                     {% if current_variant.available %}
                     {{ 'products.product.add_to_cart' | t }}
@@ -1680,7 +1681,7 @@ function showSlides(n) {
 },
 {
 "id": "blog_moretext1",
-"type": "text",
+"type": "richtext",
 "label": "Blog more text 1",
 "default": "<p>For more recipes, visit our blog</p>"
 },

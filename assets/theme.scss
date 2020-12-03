@@ -1559,6 +1559,8 @@ a {
   color: $colorTextBody;
   text-decoration: none;
   background: transparent;
+  
+  font-size: 15px;
 
   &:hover {
     color: $colorTextBody;
@@ -2097,6 +2099,7 @@ $shareCountBg: $colorBody;
 
     button {
       position: relative;
+      outline: none;
     }
 
     button:before {
@@ -2586,6 +2589,7 @@ $slick-opacity-not-active: 0.25;
       color: transparent;
       padding: 5px;
       cursor: pointer;
+   
       &:hover, &:focus {
         &:before {
           opacity: $slick-opacity-on-hover;
@@ -2614,6 +2618,7 @@ $slick-opacity-not-active: 0.25;
     &.slick-active button:before {
       color: $slick-dot-color-active;
       opacity: $slick-opacity-default;
+
     }
   }
 }

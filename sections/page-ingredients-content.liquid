@@ -42,6 +42,8 @@
       <div class="thecopy">
         <h3>{{ section.settings.icontitle4 }}</h3>
         <div class="ingredients-icon-text">{{ section.settings.icontext4 }}</div>
+        <a  href="{{ section.settings.link_icon4 }}">{{ section.settings.link_label_icon4 }}</a>
+
       </div>
     </div>
     <div class="s-block">
@@ -49,6 +51,8 @@
       <div class="thecopy">
         <h3>{{ section.settings.icontitle5 }}</h3>
         <div class="ingredients-icon-text">{{ section.settings.icontext5 }}</div>
+        <a href="{{ section.settings.link_icon5 }}">{{ section.settings.link_label_icon5 }}</a>
+
       </div>
     </div>
   </div>
@@ -252,6 +256,15 @@
       "id": "icontext4",
       "type": "richtext",
    		"label": "Icon Text 4"
+    },{
+      "type": "text",
+      "id": "link_label_icon4",
+      "label": "Button Text"
+    },
+	{
+      "type": "url",
+      "id": "link_icon4",
+      "label": "Link to Button"
     },
     {
       "id": "icon5",
@@ -266,8 +279,18 @@
     {
       "id": "icontext5",
       "type": "richtext",
-   		"label": "Icon Text 5"
+   		"label": "  Text 5"
 	  },
+{
+      "type": "text",
+      "id": "link_label_icon5",
+      "label": "Button Text"
+    },
+	{
+      "type": "url",
+      "id": "link_icon5",
+      "label": "Link to Button"
+    },
 	  {
     	"type": "header",
     	"content": "bottom icons section"

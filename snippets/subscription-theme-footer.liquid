@@ -47,22 +47,22 @@
 								url: '/cart/update.js',
 								dataType: 'json',
 								success: function() {
-									window.location.href = '/cart';
+									window.location.href = '/checkout';
 								}
 							});
 						} else {
-							window.location.href = '/cart';
+							window.location.href = '/checkout';
 						}
 					} catch (e) {
-						window.location.href = '/cart';
+						window.location.href = '/checkout';
 					}
 				}
-				var checkout_button_selectors = '[href="/checkout"], form[action="/cart"] button[type="submit"], form[action="/cart"] input[type="submit"], form[action="/checkout"] input[type="submit"], form[action="/checkout"] button[type="submit"]';
+				var checkout_button_selectors = '[href="/checkout"], form[action="/checkout"] button[type="submit"], form[action="/cart"] input[type="submit"], form[action="/checkout"] input[type="submit"], form[action="/checkout"] button[type="submit"]';
 				$(document).on('click', checkout_button_selectors, function(e) {
 					if (!e.target.hasAttribute('data-disable-recharge')) {
 						e.preventDefault();
 						reChargeSaveCartNoteAndRedirectToCart();
-						window.location.href = '/cart';
+						window.location.href = '/checkout';
 					} else {
 						console.info('ReCharge disabled');
 					}

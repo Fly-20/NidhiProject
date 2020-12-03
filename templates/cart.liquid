@@ -23,7 +23,7 @@
 
       {% render 'banana-stand-cart-top-container' %}
 
-      <form action="/cart" method="post" novalidate class="cart">
+      <form action="{{ routes.cart_url }}" method="post" novalidate class="cart">
 
         <div class="cart__row medium-down--hide cart__header-labels">
           <div class="grid--full">

@@ -341,7 +341,7 @@ font-family: 'Montserrat', sans-serif;
 
 .hide-mobile {
   @include breakpoint(xs) {
-    display: none !important;
+    
   }
 }
 .show-mobile {
@@ -1940,6 +1940,7 @@ a.cta {
 	 
     @include breakpoint(xs) { 
       width: 100%;
+      img {width: 100%; max-width: 300px;}
       margin-top: 12%;
     }
   }
@@ -1952,7 +1953,7 @@ a.cta {
   text-align: center;
   padding-bottom: 90px;
   .s-block {
-    margin-top: 30px;
+    margin-top: 40px;
     @include breakpoint(xs) { 
       
       margin-left: auto;
@@ -1974,11 +1975,11 @@ a.cta {
       vertical-align: top;
       width: 60%;
       margin-left: 7%;
-      margin-top: 10px;
+      
       text-align: left;
        @include breakpoint(xs) { 
         width: 100%;
-        margin-top: 15px;
+        margin-top: 20px;
         text-align: center;
         margin-left: 0;
       }
@@ -1986,7 +1987,7 @@ a.cta {
     h3 { 
       font-size: 25px;
       letter-spacing: 0.05em;
-      margin-top: 10px;
+      
       line-height: 1.2;
       font-weight: 500;
     }
@@ -3058,8 +3059,6 @@ ul.tags {
   .flickity-page-dots .dot.is-selected { opacity: 1 !important; }
 
   .flickity-prev-next-button { opacity: .1; @include ease(.2s); }
-  .flickity-prev-next-button.previous { background: url({{ 'angle-left.png' | asset_url }}) no-repeat center center; background-size: 11px; }
-  .flickity-prev-next-button.next { background: url({{ 'angle-right.png' | asset_url }}) no-repeat center center; background-size: 11px; }
   .flickity-button-icon { display:none; }
   &:hover .flickity-prev-next-button { opacity: 1; }
 
@@ -3075,9 +3074,10 @@ ul.tags {
   left: 0;
   top: 60px;
   background: $tan;
-  z-index: 1;
+  z-index: 99;
   @include breakpoint(xs) { 
-    display:none;
+    height: 110px;
+    line-height: none;
   }
 
     .fixed-scroll-title {
@@ -4182,7 +4182,7 @@ a.cart-link {
   }
   &:hover svg { opacity: 1; }
   .counter {
-    width: 19px;
+    width: 20px;
     position: absolute;
     font-size: 8px;
     font-weight: 400;
@@ -4364,6 +4364,10 @@ a.cart-link {
   height: 45px;
   line-height: 45px;
   padding: 0 30px;
+}
+.cart__checkout:hover{
+  background-color: #353737;
+  color:#fff !important;
 }
 .update-cart {
   font-size: 11px;
@@ -5384,12 +5388,15 @@ font-size: 12px!important;
 
 
 /*================ NIKHIL CSS [START] ================*/
+.main-slider .carousel-item{position:relative;}
 .main-slider img{width:100%;height:100%;object-fit:cover;}
 .main-slider .carousel-text{width: 100%;padding: 0 30px 0 80px;text-align: left;position: absolute;top: 50%;transform: translate(0, -50%);}
 .main-slider h2{font-family: 'Josefin Sans', sans-serif;font-size:32px;line-height:1.2;letter-spacing: 0.08em;}
 .main-slider .rte{font-size:17px;font-weight:500;line-height:21px;letter-spacing: 0.15em;margin-bottom:40px;}
 .main-slider .btn{font-size: 14px;font-weight: 500;line-height: 17px;letter-spacing: 0.15em;text-transform:none;padding:10px 35px;}
 .main-slider .flickity-button:disabled{display:none;}
+.main-slider .slick-dots li button:before{background-color:transparent; border:1px solid white;}
+.main-slider .slick-dots li.slick-active button:before{background-color:white;outline: none;}
 
 .template-index .press-slider-wrapper {padding:60px 0;margin:0;height:auto;
   @include breakpoint(xs) { 
@@ -5471,6 +5478,16 @@ font-size: 12px!important;
 .results-slider .slick-next:before{transform: rotate(-45deg);-webkit-transform: rotate(-45deg);}
 .results-slider .slick-prev:before{transform: rotate(135deg);-webkit-transform: rotate(135deg);}
 
+.flickity-button svg{display:none !important;}
+.flickity-button:before{content:'';font-size:0;border: solid grey;border-width: 0 1px 1px 0;padding: 8px;display: inline-block;}
+.flickity-prev-next-button.next:before{transform: rotate(-45deg);-webkit-transform: rotate(-45deg);}
+.flickity-prev-next-button.previous:before{transform: rotate(135deg);-webkit-transform: rotate(135deg);}
+
+.prev, .next1{background:none !important;}
+.prev:before, .next1:before{content:'';font-size:0;border: solid grey;border-width: 0 1px 1px 0;padding: 8px;display: inline-block;}
+.next1:before{transform: rotate(-45deg);-webkit-transform: rotate(-45deg);}
+.prev:before{transform: rotate(135deg);-webkit-transform: rotate(135deg);}
+
 .results-page-slider h2{letter-spacing: 0.03em;font-size: 24px;font-weight: 500;line-height: 1;text-transform:uppercase;margin-top:35px;}
 .results-page-slider .slick-prev, .results-page-slider .slick-next{width:28px;height:28px;}
 .results-page-slider .slick-prev{left:0;}
@@ -5495,7 +5512,7 @@ font-size: 12px!important;
 .collection-title-bar .custom-select__trigger .arrow::before{left:-4px;height: 80%;}
 .collection-title-bar .custom-select__trigger .arrow::after{left:4px;height: 80%;}
 .custom-options{box-shadow:0 8px 7px 1px rgba(0,0,0,0.03);border:none;}
-.fixed-scroll-add .fixed-scroll-title h1{font-weight: 600;letter-spacing: 0.03em;}
+.fixed-scroll-add .fixed-scroll-title h1{font-weight: 600;letter-spacing: 0.03em;font-size: 12px}
 .products-sliders .carousel{margin-bottom:20px;}
 .product-single__description{font-size:16px;font-weight: 500;letter-spacing: 0.03em;}
 .btn--add-to-cart.btn, .btn--add-to-cart.btn--secondary, .shopify-payment-button .btn--add-to-cart.shopify-payment-button__button--unbranded{padding:10px 45px;}
@@ -5572,6 +5589,10 @@ font-size: 12px!important;
   .ziz-related .prod-box h1{font-size:14px; padding:10px 0;}
   #wiremo-widget p {font-size: 15px !important;}
   .ingredients .ingredients-text, .ingredients .ingredients-link{text-align:center;margin-top:4%;}
+  .blog-slider .slick-prev:before, .blog-slider .slick-next:before, .results-page-slider .slick-prev:before, .results-page-slider .slick-next:before, .flickity-button:before, .prev:before, .next1:before {padding: 4px !important;}
+  .s-block .ingredients-icon-text {margin-bottom: 0;}
+  .page-blocks .subheaders-custom-3 {padding: 15px 40px !important;}
+  .new-collection-wrap .grid__item {padding-left: 0;}
 }
 @media (max-width: 576px)
 {
@@ -5580,7 +5601,8 @@ font-size: 12px!important;
 }
 @media screen and (max-width:767px){
   .fera-productReviewsSummary-reviewCount{position:absolute;}
-  .main-slider .carousel-text{margin:0;text-align:center; top: 30%;  }
+  .main-slider .carousel-text{margin:0;text-align:center; top: 3%;padding: 25px 37px;transform: none;}
+  .main-slider .slick-dots{}
   .logo-bar .logo-bar__item{width:50%;padding:0 20px;}
   .section-logo-list .rte{font-size:18px;line-height:28px;}
   .feature-row .feature-row__text--left{padding:5% 0 10% 0;}
@@ -5608,11 +5630,11 @@ font-size: 12px!important;
   .review-carousel .carousel-cell {padding:0 10px;}
   .mcs-add-to-cart{padding: 0 10px;font-size: 8px;}
   body.scrolled .ham, .menu-toggle svg{width:60px;height:60px;}
-  .page-banner img{height:280px;object-fit:cover;}
   .subheaders-custom-3{font-size:22px !important;}
   .page-about-content .page-block .content, .page-about-content .content-text{padding-left: 0;padding-right: 0;}
-  .page-banner-results .page-banner-copy, .homepage-banner .vertical{left: -4%;width: 80%;max-width:440px;}
-  .homepage-banner img{min-height:280px;object-fit:cover;}
+  .page-banner-results .page-banner-copy, .homepage-banner .vertical{left: -4%;width: 250px;max-width:440px;}
+  .page-banner-ingredients .page-banner-copy{left: 40%;width: 300px;max-width:440px;}
+  .homepage-banner img{min-height:auto;object-fit:cover;}
   .zizia-icons .zizia-icon-list{flex-wrap:wrap;justify-content:center;}
   .zizia-icons h2{font-size:22px;}
   .zizia-icons .icon{width:25%;flex: inherit;}
@@ -5633,6 +5655,8 @@ font-size: 12px!important;
   .faq-area .content {font-size: 14px;}
   .ziz-related .related-wrap {margin:0 -15px;}
   .ziz-related .related-wrap .related-item{padding:0 15px;}
+  .page-banner .page-banner-copy h1{font-size:4.4vw;}
+  .page-banner .page-banner-copy p{font-size: 2.8vw !important;}
 }
 
 @media screen and (max-width:599px){
@@ -5640,7 +5664,6 @@ font-size: 12px!important;
   .main-slider .rte{font-size:15px;margin-bottom:25px;}
   .homepage-results .copy-area p{font-size:15px;}
   .page-text-center{margin:35px auto;}
-  .page-banner .page-banner-copy h1{font-size:26px;}
   .feature-row .featured-row__subtext, .page-about-content .page-text-center p, .page-about-content .page-block .content, .page-about-content .content-text{font-size: 14px;}
   .homepage-results .results-slider .carousel-cell{padding:0 30px;}
   .customer-review .headers-custom{margin-bottom:30px;}
@@ -5679,12 +5702,15 @@ font-size: 12px!important;
   .ziz-related .related-wrap .related-item{width:50%;}
   #wiremo-widget p {font-size: 13px !important;}
   #AddToCart--product-template{padding:11px 29px;margin-right:0;}
+  #AddToCart1--product-template{padding:11px 29px;margin-right:0;min-width: 50px;padding: 6px 20px;font-weight: 600;margin-bottom: 10px;font-size: 11px;}
 }
 
 @media screen and (max-width:375px){
-  .main-slider h2{font-size:18px;}
-  .main-slider .rte{font-size:12px;margin-bottom:20px;}
-  .main-slider .btn{font-size:12px;padding:7px 25px;}
+  .main-slider h2{font-size:22px;}
+  .main-slider .rte{font-size:15px;margin-bottom:20px;}
+  .main-slider .btn{font-size:15px;padding:7px 25px;}
+  .page-banner .page-banner-copy h1{font-size:5vw;}
+  .page-banner .page-banner-copy p{font-size: 3.4vw !important;}
 }
 
 /*================ NIKHIL CSS [END] ================*/
@@ -5987,12 +6013,18 @@ padding-bottom:0!important;
   .results-slider .slick-prev:before, .results-slider .slick-next:before{ padding:4px!important;}
   
 }
+
+#shopify-section-1603696680281 a
+  {
+    font-size:23px;
+  }
 @media screen and (max-width:767px){
 
 #shopify-section-1603696680281 h1
   {
     padding:0;
   }
+  
 .press-testimonial
   {
        padding:0;
@@ -6143,7 +6175,7 @@ padding-bottom:0!important;
 
 #shopify-section-page-about-content .subheaders-custom-3{
   @include breakpoint(xs) { 
-  font-size: 18px !important;
+  font-size: 22px !important;
     padding: 15px;
 	}
 }
@@ -6251,7 +6283,7 @@ padding-bottom:0!important;
 
 #shopify-section-collection-template .grid-product__title {
   @include breakpoint(xs) { 
-  font-size: 14px;
+  font-size: 15px;
       }
 }
 
@@ -6288,28 +6320,16 @@ padding-bottom:0!important;
   height:40%;
 }
 
-.article_tag1 { 
-                float:left;  
-                
-                width:25%; 
-                 
-            } 
-.article_tag2{ 
-                float:left;  
-                 
-                width:50%; 
-                
-            } 
-.article_tag3{ 
-                float:right; 
-                
-                width:25%; 
-   }
-
 .article_tag {
-  margin: 0 32%;
+  margin: 0 auto;
+  width: 100%;
+   justify-content: center;
+  display:flex;
 }
-
+.article_tag2
+{
+  margin-left:20px;
+}
 .page-block2 {
 
    @include breakpoint(xs) { 
@@ -6415,6 +6435,27 @@ padding-bottom:0!important;
     }
 }
 
+.fixed-scroll-add
+{
+  @include breakpoint(xs) { 
+     height:auto!important;
+    } 
+}
+
+.fixed-scroll-add .fixed-scroll-title
+{
+    @include breakpoint(xs) { 
+     padding-bottom:0;
+    }
+}
+.fixed-scroll-add
+{
+    @include breakpoint(xs) { 
+    line-height:40px;
+      
+    }
+}
+
 #shopify-section-maxwell-banner-home .slick-prev {
       margin: 0 auto;
   	  left: 50%;
@@ -6426,5 +6467,23 @@ padding-bottom:0!important;
   	  left: 50%;
   	  position: unset;
 }
-    
+
+
+
 // End Code by Umang
+
+.flickity-prev-next-button.previous
+{
+  left:-30px;
+}
+.flickity-prev-next-button.next
+{
+  right:-30px;
+}
+
+.blog-more .rte a {
+  border-bottom: unset;
+  text-transform: none;
+  font-size: 17px !important;
+  font-weight: 500 !important;
+}
